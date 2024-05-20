@@ -1,0 +1,95 @@
+﻿off rel,off artifact,D3FEND Tactic,D3FEND Technique,def rel,def artifact
+no defensive relations yet,,,,,
+no defensive relations yet,,,,,
+accesses,Password,Detect,Credential Compromise Scope Analysis,analyzes,Credential
+produces,Authentication,Detect,Authentication Event Thresholding,analyzes,Authentication
+produces,Authentication,Detect,Resource Access Pattern Analysis,analyzes,Authentication
+accesses,Password,Deceive,Decoy User Credential,spoofs,Credential
+produces,Authentication,Detect,Session Duration Analysis,analyzes,Authentication
+may-create,Intranet Administrative Network Traffic,Detect,User Geolocation Logon Pattern Analysis,analyzes,Network Traffic
+may-create,Intranet Administrative Network Traffic,Detect,Protocol Metadata Anomaly Detection,analyzes,Network Traffic
+may-create,Intranet Administrative Network Traffic,Detect,Client-server Payload Profiling,analyzes,Network Traffic
+may-create,Intranet Administrative Network Traffic,Detect,Administrative Network Activity Analysis,analyzes,Intranet Administrative Network Traffic
+may-create,Intranet Administrative Network Traffic,Detect,Per Host Download-Upload Ratio Analysis,analyzes,Network Traffic
+may-create,Intranet Administrative Network Traffic,Detect,Connection Attempt Analysis,analyzes,Intranet Network Traffic
+may-create,Intranet Administrative Network Traffic,Detect,Network Traffic Community Deviation,analyzes,Network Traffic
+may-create,Intranet Administrative Network Traffic,Detect,Remote Terminal Session Detection,analyzes,Network Traffic
+accesses,Password,Evict,Credential Revoking,deletes,Credential
+accesses,Password,Evict,Authentication Cache Invalidation,deletes,Credential
+accesses,Password,Harden,One-time Password,use-limits,Password
+accesses,Password,Harden,Credential Transmission Scoping,restricts,Credential
+accesses,Password,Harden,Strong Password Policy,strengthens,Password
+accesses,Password,Harden,Credential Rotation,regenerates,Credential
+may-create,Intranet Administrative Network Traffic,Isolate,Network Traffic Filtering,filters,Network Traffic
+produces,Authentication,Model,Asset Vulnerability Enumeration,evaluates,Digital Artifact
+accesses,Password,Detect,Credential Compromise Scope Analysis,analyzes,Credential
+may-create,Intranet Administrative Network Traffic,Detect,User Geolocation Logon Pattern Analysis,analyzes,Network Traffic
+produces,Authentication,Detect,Authentication Event Thresholding,analyzes,Authentication
+produces,Authentication,Detect,Session Duration Analysis,analyzes,Authentication
+produces,Authentication,Detect,Resource Access Pattern Analysis,analyzes,Authentication
+may-create,Intranet Administrative Network Traffic,Detect,Per Host Download-Upload Ratio Analysis,analyzes,Network Traffic
+may-create,Intranet Administrative Network Traffic,Detect,Protocol Metadata Anomaly Detection,analyzes,Network Traffic
+may-create,Intranet Administrative Network Traffic,Detect,Administrative Network Activity Analysis,analyzes,Intranet Administrative Network Traffic
+may-create,Intranet Administrative Network Traffic,Detect,Remote Terminal Session Detection,analyzes,Network Traffic
+may-create,Intranet Administrative Network Traffic,Detect,Client-server Payload Profiling,analyzes,Network Traffic
+may-create,Intranet Administrative Network Traffic,Detect,Connection Attempt Analysis,analyzes,Intranet Network Traffic
+may-create,Intranet Administrative Network Traffic,Detect,Network Traffic Community Deviation,analyzes,Network Traffic
+accesses,Password,Harden,Strong Password Policy,strengthens,Password
+accesses,Password,Harden,Credential Rotation,regenerates,Credential
+accesses,Password,Harden,Credential Transmission Scoping,restricts,Credential
+accesses,Password,Harden,One-time Password,use-limits,Password
+accesses,Password,Deceive,Decoy User Credential,spoofs,Credential
+accesses,Password,Evict,Credential Revoking,deletes,Credential
+accesses,Password,Evict,Authentication Cache Invalidation,deletes,Credential
+modifies,Authentication Log,Model,Asset Vulnerability Enumeration,evaluates,Digital Artifact
+may-create,Intranet Administrative Network Traffic,Isolate,Network Traffic Filtering,filters,Network Traffic
+accesses,Mail Server,Deceive,Decoy Network Resource,spoofs,Network Resource
+reads,Email,Deceive,Decoy File,spoofs,File
+reads,Email,Detect,Dynamic Analysis,analyzes,Document File
+reads,Email,Detect,Emulated File Analysis,analyzes,Document File
+reads,Email,Detect,Sender MTA Reputation Analysis,analyzes,Email
+reads,Email,Detect,Sender Reputation Analysis,analyzes,Email
+reads,Email,Harden,File Encryption,encrypts,File
+reads,Email,Harden,Local File Permissions,restricts,File
+modifies,Application Configuration,Harden,Application Configuration Hardening,hardens,Application Configuration
+reads,Email,Evict,File Removal,deletes,File
+reads,Email,Detect,Homoglyph Detection,analyzes,Email
+reads,Email,Model,Data Inventory,inventories,Document File
+accesses,Mail Server,Model,Network Node Inventory,inventories,Network Node
+modifies,Application Configuration,Model,Configuration Inventory,inventories,Configuration Resource
+reads,Email,Model,Asset Vulnerability Enumeration,evaluates,Digital Artifact
+accesses,Mail Server,Model,Logical Link Mapping,maps,Network Node
+accesses,Mail Server,Model,Physical Link Mapping,maps,Network Node
+accesses,Mail Server,Evict,Email Removal,may-access,Mail Server
+reads,Email,Detect,File Analysis,analyzes,File
+modifies,Application Configuration,Harden,Application Configuration Hardening,hardens,Application Configuration
+modifies,Application Configuration,Model,Configuration Inventory,inventories,Configuration Resource
+accesses,Resource,Model,Asset Vulnerability Enumeration,evaluates,Digital Artifact
+no defensive relations yet,,,,,
+no defensive relations yet,,,,,
+no defensive relations yet,,,,,
+no defensive relations yet,,,,,
+no defensive relations yet,,,,,
+no defensive relations yet,,,,,
+no defensive relations yet,,,,,
+no defensive relations yet,,,,,
+no defensive relations yet,,,,,
+no defensive relations yet,,,,,
+no defensive relations yet,,,,,
+no defensive relations yet,,,,,
+no defensive relations yet,,,,,
+uses,Domain User Account,Detect,Domain Account Monitoring,monitors,Domain User Account
+produces,Authorization,Detect,Job Function Access Pattern Analysis,analyzes,Authorization
+produces,Authorization,Detect,Resource Access Pattern Analysis,analyzes,Authorization
+produces,Authorization,Detect,Session Duration Analysis,analyzes,Authorization
+produces,Authorization,Detect,Authorization Event Thresholding,analyzes,Authorization
+uses,Local User Account,Detect,Local Account Monitoring,analyzes,Local User Account
+uses,Default User Account,Evict,Account Locking,disables,User Account
+produces,Authentication,Detect,Authentication Event Thresholding,analyzes,Authentication
+uses,User Account,Harden,User Account Permissions,restricts,User Account
+uses,Domain User Account,Harden,Multi-factor Authentication,authenticates,User Account
+uses,User Account,Harden,Biometric Authentication,authenticates,User Account
+uses,Default User Account,Harden,One-time Password,authenticates,User Account
+uses,Default User Account,Harden,Strong Password Policy,strengthens,User Account
+uses,Cloud User Account,Model,Access Modeling,maps,User Account
+uses,Default User Account,Model,Asset Vulnerability Enumeration,evaluates,Digital Artifact

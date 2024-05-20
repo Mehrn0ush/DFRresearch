@@ -1,0 +1,917 @@
+﻿off rel,off artifact,D3FEND Tactic,D3FEND Technique,def rel,def artifact
+executes,Executable File,Deceive,Decoy File,spoofs,File
+executes,Executable File,Detect,Emulated File Analysis,analyzes,Executable File
+invokes,Create Process,Detect,Process Spawn Analysis,analyzes,Create Process
+executes,Executable File,Detect,Dynamic Analysis,analyzes,Executable File
+invokes,Create Process,Detect,System Call Analysis,analyzes,System Call
+executes,Executable File,Evict,File Removal,deletes,File
+modifies,Operating System Configuration File,Harden,Local File Permissions,restricts,File
+modifies,Operating System Configuration File,Harden,File Encryption,encrypts,File
+creates,System Configuration Database,Harden,System Configuration Permissions,restricts,System Configuration Database
+executes,Executable File,Isolate,Executable Allowlisting,blocks,Executable File
+invokes,Create Process,Isolate,Hardware-based Process Isolation,restricts,Create Process
+executes,Executable File,Isolate,Executable Denylisting,blocks,Executable File
+creates,System Configuration Database,Model,Asset Vulnerability Enumeration,evaluates,Digital Artifact
+may-modify,System Configuration Database Record,Model,Configuration Inventory,inventories,Configuration Resource
+creates,System Configuration Database,Model,Data Inventory,inventories,Database
+modifies,Access Control Configuration,Model,Network Traffic Policy Mapping,maps,Access Control Configuration
+modifies,Access Control Configuration,Model,Access Modeling,maps,Access Control Configuration
+modifies,Operating System Configuration File,Detect,File Analysis,analyzes,File
+modifies,Operating System Configuration File,Detect,System File Analysis,analyzes,Operating System File
+invokes,Create Process,Isolate,Mandatory Access Control,restricts,Create Process
+invokes,System Call,Isolate,System Call Filtering,filters,System Call
+executes,Executable File,Deceive,Decoy File,spoofs,File
+executes,Executable File,Detect,Dynamic Analysis,analyzes,Executable File
+invokes,Create Process,Detect,System Call Analysis,analyzes,System Call
+invokes,Create Process,Detect,Process Spawn Analysis,analyzes,Create Process
+executes,Executable File,Detect,Emulated File Analysis,analyzes,Executable File
+executes,Executable File,Evict,File Removal,deletes,File
+executes,Executable File,Harden,File Encryption,encrypts,File
+executes,Executable File,Harden,Local File Permissions,restricts,File
+executes,Executable File,Isolate,Executable Allowlisting,blocks,Executable File
+invokes,Create Process,Isolate,Hardware-based Process Isolation,restricts,Create Process
+invokes,Create Process,Isolate,Executable Denylisting,restricts,Create Process
+executes,Executable File,Model,Asset Vulnerability Enumeration,evaluates,Digital Artifact
+may-modify,System Configuration Database Record,Model,Configuration Inventory,inventories,Configuration Resource
+executes,Executable File,Detect,File Analysis,analyzes,File
+invokes,Create Process,Isolate,Mandatory Access Control,restricts,Create Process
+invokes,Create Process,Isolate,System Call Filtering,filters,System Call
+no defensive relations yet,,,,,
+creates,Domain User Account,Detect,Domain Account Monitoring,monitors,Domain User Account
+creates,Domain User Account,Evict,Account Locking,disables,User Account
+creates,Domain User Account,Harden,Strong Password Policy,strengthens,User Account
+creates,Domain User Account,Harden,User Account Permissions,restricts,User Account
+creates,Domain User Account,Model,Asset Vulnerability Enumeration,evaluates,Digital Artifact
+creates,Domain User Account,Harden,Biometric Authentication,authenticates,User Account
+creates,Domain User Account,Harden,Multi-factor Authentication,authenticates,User Account
+creates,Domain User Account,Harden,One-time Password,authenticates,User Account
+creates,Domain User Account,Model,Access Modeling,maps,User Account
+no defensive relations yet,,,,,
+no defensive relations yet,,,,,
+may-transfer,Certificate File,Deceive,Decoy File,spoofs,File
+produces,Outbound Internet File Transfer Traffic,Detect,Per Host Download-Upload Ratio Analysis,analyzes,Network Traffic
+may-transfer,Certificate File,Detect,Certificate Analysis,analyzes,Certificate File
+produces,Outbound Internet Network Traffic,Detect,Network Traffic Community Deviation,analyzes,Network Traffic
+produces,Outbound Internet Network Traffic,Detect,Client-server Payload Profiling,analyzes,Network Traffic
+produces,Outbound Internet DNS Lookup Traffic,Detect,Relay Pattern Analysis,analyzes,Outbound Internet Network Traffic
+produces,Outbound Internet DNS Lookup Traffic,Detect,Protocol Metadata Anomaly Detection,analyzes,Network Traffic
+produces,Outbound Internet Web Traffic,Detect,Remote Terminal Session Detection,analyzes,Network Traffic
+produces,Outbound Internet File Transfer Traffic,Detect,File Carving,analyzes,File Transfer Network Traffic
+produces,Outbound Internet DNS Lookup Traffic,Detect,DNS Traffic Analysis,analyzes,Outbound Internet DNS Lookup Traffic
+produces,Outbound Internet Network Traffic,Detect,User Geolocation Logon Pattern Analysis,analyzes,Network Traffic
+may-transfer,Certificate File,Evict,File Removal,deletes,File
+may-transfer,Certificate File,Harden,File Encryption,encrypts,File
+may-transfer,Certificate File,Harden,Local File Permissions,restricts,File
+produces,Outbound Internet DNS Lookup Traffic,Isolate,DNS Allowlisting,blocks,Outbound Internet DNS Lookup Traffic
+produces,Outbound Internet File Transfer Traffic,Isolate,Network Traffic Filtering,filters,Network Traffic
+produces,Outbound Internet DNS Lookup Traffic,Isolate,DNS Denylisting,blocks,DNS Network Traffic
+produces,Outbound Internet Network Traffic,Model,Asset Vulnerability Enumeration,evaluates,Digital Artifact
+may-transfer,Certificate File,Detect,File Analysis,analyzes,File
+produces,Outbound Internet Web Traffic,Isolate,Outbound Traffic Filtering,filters,Outbound Network Traffic
+produces,Outbound Internet DNS Lookup Traffic,Isolate,Reverse Resolution IP Denylisting,blocks,Outbound Internet DNS Lookup Traffic
+produces,Outbound Internet DNS Lookup Traffic,Isolate,Forward Resolution Domain Denylisting,blocks,Outbound Internet DNS Lookup Traffic
+produces,Outbound Internet Web Traffic,Detect,Relay Pattern Analysis,analyzes,Outbound Internet Network Traffic
+may-transfer,Certificate File,Detect,Certificate Analysis,analyzes,Certificate File
+produces,Outbound Internet Web Traffic,Detect,Client-server Payload Profiling,analyzes,Network Traffic
+produces,Outbound Internet Web Traffic,Detect,Per Host Download-Upload Ratio Analysis,analyzes,Network Traffic
+produces,Outbound Internet Web Traffic,Detect,Protocol Metadata Anomaly Detection,analyzes,Network Traffic
+produces,Outbound Internet Web Traffic,Detect,Remote Terminal Session Detection,analyzes,Network Traffic
+produces,Outbound Internet Web Traffic,Detect,User Geolocation Logon Pattern Analysis,analyzes,Network Traffic
+produces,Outbound Internet Web Traffic,Detect,Network Traffic Community Deviation,analyzes,Network Traffic
+may-transfer,Certificate File,Deceive,Decoy File,spoofs,File
+may-transfer,Certificate File,Evict,File Removal,deletes,File
+may-transfer,Certificate File,Harden,Local File Permissions,restricts,File
+may-transfer,Certificate File,Harden,File Encryption,encrypts,File
+may-transfer,Certificate File,Model,Asset Vulnerability Enumeration,evaluates,Digital Artifact
+produces,Outbound Internet Web Traffic,Isolate,Network Traffic Filtering,filters,Network Traffic
+may-transfer,Certificate File,Detect,File Analysis,analyzes,File
+produces,Outbound Internet Web Traffic,Isolate,Outbound Traffic Filtering,filters,Outbound Network Traffic
+creates,Custom Archive File,Evict,File Removal,deletes,File
+creates,Custom Archive File,Harden,File Encryption,encrypts,File
+creates,Custom Archive File,Harden,Local File Permissions,restricts,File
+creates,Archive File,Deceive,Decoy File,spoofs,File
+creates,Archive File,Model,Asset Vulnerability Enumeration,evaluates,Digital Artifact
+creates,Custom Archive File,Detect,File Analysis,analyzes,File
+creates,Archive File,Deceive,Decoy File,spoofs,File
+creates,Archive File,Evict,File Removal,deletes,File
+creates,Archive File,Harden,File Encryption,encrypts,File
+creates,Archive File,Harden,Local File Permissions,restricts,File
+creates,Archive File,Model,Asset Vulnerability Enumeration,evaluates,Digital Artifact
+creates,Archive File,Detect,File Analysis,analyzes,File
+may-create,Shared Library File,Deceive,Decoy File,spoofs,File
+may-modify,User Startup Script File,Detect,Emulated File Analysis,analyzes,Executable File
+may-modify,User Startup Script File,Detect,Dynamic Analysis,analyzes,Executable File
+may-modify,User Startup Script File,Evict,File Removal,deletes,File
+may-modify,Symbolic Link,Harden,Local File Permissions,restricts,File
+may-modify,Symbolic Link,Harden,File Encryption,encrypts,File
+modifies,System Service Software,Harden,Software Update,updates,Software
+may-modify,User Startup Script File,Isolate,Executable Allowlisting,blocks,Executable File
+may-modify,User Startup Script File,Isolate,Executable Denylisting,blocks,Executable File
+modifies,User Logon Init Resource,Model,Asset Vulnerability Enumeration,evaluates,Digital Artifact
+modifies,System Service Software,Model,Software Inventory,inventories,Software
+modifies,System Configuration Database Record,Model,Configuration Inventory,inventories,Configuration Resource
+may-modify,Symbolic Link,Detect,File Analysis,analyzes,File
+may-modify,System Configuration Init Database Record,Detect,System Init Config Analysis,analyzes,System Init Configuration
+may-modify,User Startup Script File,Deceive,Decoy File,spoofs,File
+may-modify,User Startup Script File,Detect,Dynamic Analysis,analyzes,Executable File
+may-modify,User Startup Script File,Harden,Local File Permissions,restricts,File
+may-modify,User Startup Script File,Harden,File Encryption,encrypts,File
+may-modify,User Startup Script File,Detect,Emulated File Analysis,analyzes,Executable File
+may-modify,User Startup Script File,Isolate,Executable Denylisting,blocks,Executable File
+may-modify,User Startup Script File,Isolate,Executable Allowlisting,blocks,Executable File
+may-modify,User Startup Script File,Evict,File Removal,deletes,File
+may-modify,System Configuration Init Database Record,Model,Configuration Inventory,inventories,Configuration Resource
+may-modify,System Configuration Init Database Record,Model,Asset Vulnerability Enumeration,evaluates,Digital Artifact
+may-modify,User Startup Script File,Detect,File Analysis,analyzes,File
+may-modify,System Configuration Init Database Record,Detect,System Init Config Analysis,analyzes,System Init Configuration
+executes,Executable Script,Detect,Dynamic Analysis,analyzes,Executable File
+executes,Executable Script,Detect,Emulated File Analysis,analyzes,Executable File
+executes,Executable Script,Evict,File Removal,deletes,File
+executes,Executable Script,Deceive,Decoy File,spoofs,File
+executes,Executable Script,Model,Asset Vulnerability Enumeration,evaluates,Digital Artifact
+executes,Executable Script,Harden,File Encryption,encrypts,File
+executes,Executable Script,Isolate,Executable Denylisting,blocks,Executable File
+executes,Executable Script,Isolate,Executable Allowlisting,blocks,Executable File
+executes,Executable Script,Harden,Local File Permissions,restricts,File
+executes,Executable Script,Detect,File Analysis,analyzes,File
+executes,Executable Script,Deceive,Decoy File,spoofs,File
+executes,Executable Script,Detect,Dynamic Analysis,analyzes,Executable File
+executes,Executable Script,Detect,Emulated File Analysis,analyzes,Executable File
+executes,Executable Script,Evict,File Removal,deletes,File
+executes,Executable Script,Harden,File Encryption,encrypts,File
+executes,Executable Script,Harden,Local File Permissions,restricts,File
+executes,Executable Script,Isolate,Executable Allowlisting,blocks,Executable File
+executes,Executable Script,Isolate,Executable Denylisting,blocks,Executable File
+executes,Executable Script,Model,Asset Vulnerability Enumeration,evaluates,Digital Artifact
+executes,Executable Script,Detect,File Analysis,analyzes,File
+executes,Executable Script,Deceive,Decoy File,spoofs,File
+executes,Executable Script,Detect,Dynamic Analysis,analyzes,Executable File
+executes,Executable Script,Detect,Emulated File Analysis,analyzes,Executable File
+executes,Executable Script,Evict,File Removal,deletes,File
+executes,Executable Script,Harden,File Encryption,encrypts,File
+executes,Executable Script,Harden,Local File Permissions,restricts,File
+executes,Executable Script,Isolate,Executable Allowlisting,blocks,Executable File
+executes,Executable Script,Isolate,Executable Denylisting,blocks,Executable File
+executes,Executable Script,Model,Asset Vulnerability Enumeration,evaluates,Digital Artifact
+executes,Executable Script,Detect,File Analysis,analyzes,File
+executes,Executable Script,Deceive,Decoy File,spoofs,File
+executes,Executable Script,Detect,Dynamic Analysis,analyzes,Executable File
+executes,Executable Script,Detect,Emulated File Analysis,analyzes,Executable File
+executes,Executable Script,Evict,File Removal,deletes,File
+executes,Executable Script,Harden,File Encryption,encrypts,File
+executes,Executable Script,Harden,Local File Permissions,restricts,File
+executes,Executable Script,Isolate,Executable Allowlisting,blocks,Executable File
+executes,Executable Script,Isolate,Executable Denylisting,blocks,Executable File
+executes,Executable Script,Model,Asset Vulnerability Enumeration,evaluates,Digital Artifact
+executes,Executable Script,Detect,File Analysis,analyzes,File
+executes,Executable Script,Deceive,Decoy File,spoofs,File
+executes,Executable Script,Detect,Dynamic Analysis,analyzes,Executable File
+executes,Executable Script,Detect,Emulated File Analysis,analyzes,Executable File
+executes,Executable Script,Evict,File Removal,deletes,File
+executes,Executable Script,Harden,File Encryption,encrypts,File
+executes,Executable Script,Harden,Local File Permissions,restricts,File
+executes,Executable Script,Isolate,Executable Allowlisting,blocks,Executable File
+executes,Executable Script,Isolate,Executable Denylisting,blocks,Executable File
+executes,Executable Script,Model,Asset Vulnerability Enumeration,evaluates,Digital Artifact
+executes,Executable Script,Detect,File Analysis,analyzes,File
+executes,Executable Script,Deceive,Decoy File,spoofs,File
+executes,Executable Script,Detect,Dynamic Analysis,analyzes,Executable File
+executes,Executable Script,Detect,Emulated File Analysis,analyzes,Executable File
+executes,Executable Script,Evict,File Removal,deletes,File
+executes,Executable Script,Harden,File Encryption,encrypts,File
+executes,Executable Script,Harden,Local File Permissions,restricts,File
+executes,Executable Script,Isolate,Executable Allowlisting,blocks,Executable File
+executes,Executable Script,Isolate,Executable Denylisting,blocks,Executable File
+executes,Executable Script,Model,Asset Vulnerability Enumeration,evaluates,Digital Artifact
+executes,Executable Script,Detect,File Analysis,analyzes,File
+accesses,Database File,Deceive,Decoy File,spoofs,File
+may-invoke,Read File,Detect,System Call Analysis,analyzes,System Call
+accesses,Database File,Evict,File Removal,deletes,File
+accesses,Database File,Harden,Local File Permissions,restricts,File
+accesses,Database File,Harden,File Encryption,encrypts,File
+accesses,MacOS Keychain,Model,Asset Vulnerability Enumeration,evaluates,Digital Artifact
+accesses,MacOS Keychain,Model,Data Inventory,inventories,Database
+may-invoke,Read File,Isolate,System Call Filtering,filters,System Call
+accesses,Database File,Detect,File Analysis,analyzes,File
+accesses,Database File,Deceive,Decoy File,spoofs,File
+may-invoke,Read File,Detect,System Call Analysis,analyzes,System Call
+accesses,Database File,Harden,Local File Permissions,restricts,File
+accesses,Database File,Harden,File Encryption,encrypts,File
+accesses,Database File,Evict,File Removal,deletes,File
+may-access,In-memory Password Store,Model,Data Inventory,inventories,Database
+may-access,In-memory Password Store,Model,Asset Vulnerability Enumeration,evaluates,Digital Artifact
+accesses,Database File,Detect,File Analysis,analyzes,File
+may-invoke,Read File,Isolate,System Call Filtering,filters,System Call
+produces,Outbound Internet Network Traffic,Detect,Protocol Metadata Anomaly Detection,analyzes,Network Traffic
+produces,Outbound Internet Network Traffic,Detect,Relay Pattern Analysis,analyzes,Outbound Internet Network Traffic
+produces,Outbound Internet Network Traffic,Detect,Remote Terminal Session Detection,analyzes,Network Traffic
+produces,Outbound Internet Network Traffic,Detect,Client-server Payload Profiling,analyzes,Network Traffic
+produces,Outbound Internet Network Traffic,Detect,Per Host Download-Upload Ratio Analysis,analyzes,Network Traffic
+produces,Outbound Internet Network Traffic,Detect,Network Traffic Community Deviation,analyzes,Network Traffic
+produces,Outbound Internet Network Traffic,Detect,User Geolocation Logon Pattern Analysis,analyzes,Network Traffic
+produces,Outbound Internet Network Traffic,Isolate,Network Traffic Filtering,filters,Network Traffic
+produces,Outbound Internet Network Traffic,Isolate,Outbound Traffic Filtering,filters,Outbound Network Traffic
+produces,Outbound Internet Network Traffic,Model,Asset Vulnerability Enumeration,evaluates,Digital Artifact
+produces,Outbound Internet Network Traffic,Detect,Client-server Payload Profiling,analyzes,Network Traffic
+produces,Outbound Internet Network Traffic,Detect,Network Traffic Community Deviation,analyzes,Network Traffic
+produces,Outbound Internet Network Traffic,Detect,Per Host Download-Upload Ratio Analysis,analyzes,Network Traffic
+produces,Outbound Internet Network Traffic,Detect,Protocol Metadata Anomaly Detection,analyzes,Network Traffic
+produces,Outbound Internet Network Traffic,Detect,Relay Pattern Analysis,analyzes,Outbound Internet Network Traffic
+produces,Outbound Internet Network Traffic,Detect,Remote Terminal Session Detection,analyzes,Network Traffic
+produces,Outbound Internet Network Traffic,Detect,User Geolocation Logon Pattern Analysis,analyzes,Network Traffic
+produces,Outbound Internet Network Traffic,Isolate,Network Traffic Filtering,filters,Network Traffic
+produces,Outbound Internet Network Traffic,Model,Asset Vulnerability Enumeration,evaluates,Digital Artifact
+produces,Outbound Internet Network Traffic,Isolate,Outbound Traffic Filtering,filters,Outbound Network Traffic
+may-create,File,Deceive,Decoy File,spoofs,File
+modifies,Network Resource,Deceive,Decoy Network Resource,spoofs,Network Resource
+may-invoke,Create File,Model,Asset Vulnerability Enumeration,evaluates,Digital Artifact
+may-create,File,Harden,File Encryption,encrypts,File
+may-create,File,Harden,Local File Permissions,restricts,File
+may-create,File,Evict,File Removal,deletes,File
+may-invoke,Create File,Detect,System Call Analysis,analyzes,System Call
+may-create,File,Detect,File Analysis,analyzes,File
+may-invoke,Create File,Detect,File Creation Analysis,analyzes,Create File
+may-invoke,Create File,Isolate,System Call Filtering,filters,System Call
+may-create,File,Deceive,Decoy File,spoofs,File
+may-invoke,Create File,Detect,System Call Analysis,analyzes,System Call
+may-create,File,Harden,Local File Permissions,restricts,File
+reads,Resource,Model,Asset Vulnerability Enumeration,evaluates,Digital Artifact
+may-create,File,Evict,File Removal,deletes,File
+may-create,File,Harden,File Encryption,encrypts,File
+may-create,File,Detect,File Analysis,analyzes,File
+may-invoke,Create File,Isolate,System Call Filtering,filters,System Call
+may-invoke,Create File,Detect,File Creation Analysis,analyzes,Create File
+may-add,Executable File,Detect,Dynamic Analysis,analyzes,Executable File
+may-add,Executable File,Detect,Emulated File Analysis,analyzes,Executable File
+may-add,Executable File,Deceive,Decoy File,spoofs,File
+invokes,Create Process,Detect,Process Spawn Analysis,analyzes,Create Process
+invokes,Create Process,Detect,System Call Analysis,analyzes,System Call
+may-add,Executable File,Evict,File Removal,deletes,File
+may-add,Executable File,Harden,File Encryption,encrypts,File
+may-add,Executable File,Harden,Local File Permissions,restricts,File
+invokes,Create Process,Isolate,Executable Denylisting,restricts,Create Process
+may-add,Executable File,Isolate,Executable Allowlisting,blocks,Executable File
+invokes,Create Process,Isolate,Hardware-based Process Isolation,restricts,Create Process
+invokes,Create Process,Model,Asset Vulnerability Enumeration,evaluates,Digital Artifact
+invokes,Create Process,Isolate,Mandatory Access Control,restricts,Create Process
+invokes,Create Process,Isolate,System Call Filtering,filters,System Call
+may-add,Executable File,Detect,File Analysis,analyzes,File
+may-transfer,Certificate File,Deceive,Decoy File,spoofs,File
+produces,Outbound Internet Encrypted Traffic,Detect,Network Traffic Community Deviation,analyzes,Network Traffic
+creates,Outbound Internet Encrypted Traffic,Detect,Relay Pattern Analysis,analyzes,Outbound Internet Network Traffic
+creates,Outbound Internet Encrypted Traffic,Detect,Protocol Metadata Anomaly Detection,analyzes,Network Traffic
+produces,Outbound Internet Encrypted Traffic,Detect,Per Host Download-Upload Ratio Analysis,analyzes,Network Traffic
+may-transfer,Certificate File,Detect,Certificate Analysis,analyzes,Certificate File
+creates,Outbound Internet Encrypted Traffic,Detect,Client-server Payload Profiling,analyzes,Network Traffic
+creates,Outbound Internet Encrypted Traffic,Detect,Remote Terminal Session Detection,analyzes,Network Traffic
+may-transfer,Certificate File,Model,Asset Vulnerability Enumeration,evaluates,Digital Artifact
+creates,Outbound Internet Encrypted Traffic,Detect,User Geolocation Logon Pattern Analysis,analyzes,Network Traffic
+creates,Outbound Internet Encrypted Traffic,Isolate,Network Traffic Filtering,filters,Network Traffic
+may-transfer,Certificate File,Evict,File Removal,deletes,File
+may-transfer,Certificate File,Harden,File Encryption,encrypts,File
+may-transfer,Certificate File,Harden,Local File Permissions,restricts,File
+may-transfer,Certificate File,Detect,File Analysis,analyzes,File
+creates,Outbound Internet Encrypted Traffic,Isolate,Outbound Traffic Filtering,filters,Outbound Network Traffic
+creates,Outbound Internet Encrypted Traffic,Detect,Client-server Payload Profiling,analyzes,Network Traffic
+creates,Outbound Internet Encrypted Traffic,Detect,Network Traffic Community Deviation,analyzes,Network Traffic
+creates,Outbound Internet Encrypted Traffic,Detect,Per Host Download-Upload Ratio Analysis,analyzes,Network Traffic
+creates,Outbound Internet Encrypted Traffic,Detect,Protocol Metadata Anomaly Detection,analyzes,Network Traffic
+creates,Outbound Internet Encrypted Traffic,Detect,Relay Pattern Analysis,analyzes,Outbound Internet Network Traffic
+creates,Outbound Internet Encrypted Traffic,Detect,Remote Terminal Session Detection,analyzes,Network Traffic
+creates,Outbound Internet Encrypted Traffic,Detect,User Geolocation Logon Pattern Analysis,analyzes,Network Traffic
+creates,Outbound Internet Encrypted Traffic,Isolate,Network Traffic Filtering,filters,Network Traffic
+creates,Outbound Internet Encrypted Traffic,Model,Asset Vulnerability Enumeration,evaluates,Digital Artifact
+creates,Outbound Internet Encrypted Traffic,Isolate,Outbound Traffic Filtering,filters,Outbound Network Traffic
+produces,Internet Network Traffic,Detect,Remote Terminal Session Detection,analyzes,Network Traffic
+produces,Internet Network Traffic,Detect,Network Traffic Community Deviation,analyzes,Network Traffic
+may-transfer,Certificate File,Detect,Certificate Analysis,analyzes,Certificate File
+produces,Internet Network Traffic,Detect,Per Host Download-Upload Ratio Analysis,analyzes,Network Traffic
+produces,Internet Network Traffic,Detect,Client-server Payload Profiling,analyzes,Network Traffic
+may-transfer,Certificate File,Deceive,Decoy File,spoofs,File
+produces,Internet Network Traffic,Detect,Protocol Metadata Anomaly Detection,analyzes,Network Traffic
+may-transfer,Certificate File,Evict,File Removal,deletes,File
+may-transfer,Certificate File,Harden,File Encryption,encrypts,File
+may-transfer,Certificate File,Harden,Local File Permissions,restricts,File
+produces,Internet Network Traffic,Detect,User Geolocation Logon Pattern Analysis,analyzes,Network Traffic
+may-transfer,Certificate File,Model,Asset Vulnerability Enumeration,evaluates,Digital Artifact
+produces,Internet Network Traffic,Isolate,Network Traffic Filtering,filters,Network Traffic
+may-transfer,Certificate File,Detect,File Analysis,analyzes,File
+produces,Inbound Internet Network Traffic,Detect,Per Host Download-Upload Ratio Analysis,analyzes,Network Traffic
+produces,Inbound Internet Network Traffic,Detect,Protocol Metadata Anomaly Detection,analyzes,Network Traffic
+produces,Inbound Internet Network Traffic,Detect,Remote Terminal Session Detection,analyzes,Network Traffic
+produces,Inbound Internet Network Traffic,Detect,Network Traffic Community Deviation,analyzes,Network Traffic
+injects,Database Query,Detect,Database Query String Analysis,analyzes,Database Query
+produces,Inbound Internet Network Traffic,Model,Asset Vulnerability Enumeration,evaluates,Digital Artifact
+produces,Inbound Internet Network Traffic,Detect,Inbound Session Volume Analysis,analyzes,Inbound Internet Network Traffic
+produces,Inbound Internet Network Traffic,Detect,Client-server Payload Profiling,analyzes,Network Traffic
+modifies,Process Segment,Harden,Process Segment Execution Prevention,neutralizes,Process Segment
+modifies,Process Segment,Harden,Segment Address Offset Randomization,obfuscates,Process Segment
+produces,Inbound Internet Network Traffic,Isolate,Network Traffic Filtering,filters,Network Traffic
+produces,Inbound Internet Network Traffic,Isolate,Inbound Traffic Filtering,filters,Inbound Network Traffic
+produces,Inbound Internet Network Traffic,Detect,User Geolocation Logon Pattern Analysis,analyzes,Network Traffic
+modifies,Process Code Segment,Detect,Process Code Segment Verification,verifies,Process Code Segment
+modifies,Stack Frame,Detect,Shadow Stack Comparisons,analyzes,Stack Frame
+modifies,Process Code Segment,Harden,Process Segment Execution Prevention,neutralizes,Process Segment
+modifies,Stack Frame,Harden,Stack Frame Canary Validation,validates,Stack Frame
+modifies,Process Code Segment,Harden,Segment Address Offset Randomization,obfuscates,Process Segment
+modifies,Stack Frame,Model,Asset Vulnerability Enumeration,evaluates,Digital Artifact
+modifies,Process Code Segment,Detect,Memory Boundary Tracking,analyzes,Process Code Segment
+produces,Intranet Network Traffic,Detect,Connection Attempt Analysis,analyzes,Intranet Network Traffic
+produces,Intranet Network Traffic,Detect,Network Traffic Community Deviation,analyzes,Network Traffic
+produces,Intranet Network Traffic,Detect,Per Host Download-Upload Ratio Analysis,analyzes,Network Traffic
+produces,Intranet Network Traffic,Detect,Client-server Payload Profiling,analyzes,Network Traffic
+produces,Intranet Network Traffic,Detect,Protocol Metadata Anomaly Detection,analyzes,Network Traffic
+may-modify,Stack Frame,Harden,Stack Frame Canary Validation,validates,Stack Frame
+may-modify,Process Segment,Harden,Process Segment Execution Prevention,neutralizes,Process Segment
+may-modify,Process Code Segment,Harden,Segment Address Offset Randomization,obfuscates,Process Segment
+produces,Intranet Network Traffic,Detect,User Geolocation Logon Pattern Analysis,analyzes,Network Traffic
+produces,Intranet Network Traffic,Detect,Remote Terminal Session Detection,analyzes,Network Traffic
+may-modify,Stack Frame,Detect,Shadow Stack Comparisons,analyzes,Stack Frame
+may-modify,Process Code Segment,Detect,Process Code Segment Verification,verifies,Process Code Segment
+produces,Intranet Network Traffic,Isolate,Network Traffic Filtering,filters,Network Traffic
+may-modify,Process Segment,Model,Asset Vulnerability Enumeration,evaluates,Digital Artifact
+may-modify,Process Code Segment,Detect,Memory Boundary Tracking,analyzes,Process Code Segment
+accesses,File,Deceive,Decoy File,spoofs,File
+accesses,File,Evict,File Removal,deletes,File
+accesses,File,Harden,File Encryption,encrypts,File
+accesses,File,Harden,Local File Permissions,restricts,File
+accesses,File,Model,Asset Vulnerability Enumeration,evaluates,Digital Artifact
+accesses,File,Detect,File Analysis,analyzes,File
+no defensive relations yet,,,,,
+no defensive relations yet,,,,,
+creates,Executable File,Deceive,Decoy File,spoofs,File
+creates,Executable File,Detect,Emulated File Analysis,analyzes,Executable File
+creates,Executable File,Detect,Dynamic Analysis,analyzes,Executable File
+may-modify,Shared Library File,Evict,File Removal,deletes,File
+modifies,Operating System Configuration File,Harden,File Encryption,encrypts,File
+creates,Executable File,Harden,Local File Permissions,restricts,File
+modifies,Service Application,Harden,Software Update,updates,Software
+creates,Executable File,Isolate,Executable Denylisting,blocks,Executable File
+creates,Executable File,Isolate,Executable Allowlisting,blocks,Executable File
+may-modify,Shared Library File,Model,Asset Vulnerability Enumeration,evaluates,Digital Artifact
+modifies,System Configuration Database Record,Model,Configuration Inventory,inventories,Configuration Resource
+modifies,Service Application,Model,Software Inventory,inventories,Software
+may-create,Shared Library File,Detect,File Analysis,analyzes,File
+modifies,Service Application,Detect,Service Binary Verification,verifies,Service Application
+modifies,Operating System Configuration File,Detect,System File Analysis,analyzes,Operating System File
+modifies,System Configuration Init Database Record,Detect,System Init Config Analysis,analyzes,System Init Configuration
+may-create,Shared Library File,Detect,File Analysis,analyzes,File
+may-create,Shared Library File,Deceive,Decoy File,spoofs,File
+may-create,Shared Library File,Evict,File Removal,deletes,File
+may-create,Shared Library File,Harden,Local File Permissions,restricts,File
+may-create,Shared Library File,Model,Asset Vulnerability Enumeration,evaluates,Digital Artifact
+may-create,Shared Library File,Harden,File Encryption,encrypts,File
+may-modify,User Init Script,Detect,Emulated File Analysis,analyzes,Executable File
+may-modify,User Init Script,Detect,Dynamic Analysis,analyzes,Executable File
+disables,Operating System Process,Detect,Process Self-Modification Detection,analyzes,Process
+disables,Operating System Process,Evict,Process Termination,terminates,Process
+disables,Operating System Process,Evict,Process Suspension,suspends,Process
+may-modify,User Init Script,Deceive,Decoy File,spoofs,File
+disables,Operating System Process,Detect,Process Spawn Analysis,analyzes,Process
+may-modify,User Init Script,Evict,File Removal,deletes,File
+may-modify,Application Configuration,Harden,Application Configuration Hardening,hardens,Application Configuration
+may-modify,User Init Script,Harden,Local File Permissions,restricts,File
+may-modify,User Init Script,Harden,File Encryption,encrypts,File
+may-modify,User Init Script,Isolate,Executable Allowlisting,blocks,Executable File
+may-modify,User Init Script,Isolate,Executable Denylisting,blocks,Executable File
+disables,Operating System Process,Isolate,Hardware-based Process Isolation,isolates,Process
+may-modify,Operating System Configuration Component,Model,Configuration Inventory,inventories,Configuration Resource
+disables,System Configuration Init Database Record,Model,Asset Vulnerability Enumeration,evaluates,Digital Artifact
+accesses,Legacy System,Model,System Vulnerability Assessment,evaluates,Digital System
+disables,Operating System Process,Detect,Process Lineage Analysis,analyzes,Process
+disables,Operating System Process,Detect,System Daemon Monitoring,monitors,Operating System Process
+disables,System Configuration Init Database Record,Detect,System Init Config Analysis,analyzes,System Init Configuration
+may-modify,User Init Script,Detect,File Analysis,analyzes,File
+disables,Operating System Process,Isolate,Mandatory Access Control,isolates,Process
+disables,Operating System Process,Detect,Process Spawn Analysis,analyzes,Process
+disables,Operating System Process,Detect,Process Self-Modification Detection,analyzes,Process
+disables,Operating System Process,Detect,System Daemon Monitoring,monitors,Operating System Process
+disables,Operating System Process,Evict,Process Termination,terminates,Process
+disables,Operating System Process,Evict,Process Suspension,suspends,Process
+disables,Operating System Process,Detect,Process Lineage Analysis,analyzes,Process
+disables,Operating System Process,Model,Asset Vulnerability Enumeration,evaluates,Digital Artifact
+disables,Operating System Process,Isolate,Hardware-based Process Isolation,isolates,Process
+disables,Operating System Process,Isolate,Mandatory Access Control,isolates,Process
+produces,Outbound Internet Network Traffic,Detect,Network Traffic Community Deviation,analyzes,Network Traffic
+produces,Outbound Internet Network Traffic,Detect,Per Host Download-Upload Ratio Analysis,analyzes,Network Traffic
+produces,Outbound Internet Network Traffic,Detect,Protocol Metadata Anomaly Detection,analyzes,Network Traffic
+produces,Outbound Internet Network Traffic,Detect,Relay Pattern Analysis,analyzes,Outbound Internet Network Traffic
+produces,Outbound Internet Network Traffic,Detect,Client-server Payload Profiling,analyzes,Network Traffic
+produces,Outbound Internet Network Traffic,Detect,Remote Terminal Session Detection,analyzes,Network Traffic
+produces,Outbound Internet Network Traffic,Isolate,Outbound Traffic Filtering,filters,Outbound Network Traffic
+produces,Outbound Internet Network Traffic,Model,Asset Vulnerability Enumeration,evaluates,Digital Artifact
+produces,Outbound Internet Network Traffic,Isolate,Network Traffic Filtering,filters,Network Traffic
+produces,Outbound Internet Network Traffic,Detect,User Geolocation Logon Pattern Analysis,analyzes,Network Traffic
+injects,Interprocess Communication,Model,Asset Vulnerability Enumeration,evaluates,Digital Artifact
+injects,Interprocess Communication,Model,Asset Vulnerability Enumeration,evaluates,Digital Artifact
+injects,Interprocess Communication,Model,Asset Vulnerability Enumeration,evaluates,Digital Artifact
+may-create,Executable File,Deceive,Decoy File,spoofs,File
+creates,Executable Binary,Detect,Emulated File Analysis,analyzes,Executable File
+creates,Executable Binary,Detect,Dynamic Analysis,analyzes,Executable File
+invokes,Move File,Detect,System Call Analysis,analyzes,System Call
+creates,Executable Binary,Evict,File Removal,deletes,File
+may-modify,Operating System Executable File,Harden,Local File Permissions,restricts,File
+creates,File,Harden,File Encryption,encrypts,File
+may-create,Executable File,Isolate,Executable Allowlisting,blocks,Executable File
+may-create,Executable File,Isolate,Executable Denylisting,blocks,Executable File
+invokes,Move File,Model,Asset Vulnerability Enumeration,evaluates,Digital Artifact
+creates,File,Detect,File Analysis,analyzes,File
+modifies,Task Schedule,Detect,Scheduled Job Analysis,analyzes,Task Schedule
+may-modify,Operating System Executable File,Detect,System File Analysis,analyzes,Operating System File
+invokes,Move File,Isolate,System Call Filtering,filters,System Call
+may-create,File,Deceive,Decoy File,spoofs,File
+invokes,Move File,Detect,System Call Analysis,analyzes,System Call
+invokes,Move File,Model,Asset Vulnerability Enumeration,evaluates,Digital Artifact
+may-create,File,Harden,Local File Permissions,restricts,File
+may-create,File,Harden,File Encryption,encrypts,File
+may-create,File,Evict,File Removal,deletes,File
+may-create,File,Detect,File Analysis,analyzes,File
+invokes,Move File,Isolate,System Call Filtering,filters,System Call
+produces,Outbound Internet Network Traffic,Detect,Relay Pattern Analysis,analyzes,Outbound Internet Network Traffic
+produces,Outbound Internet Network Traffic,Detect,Remote Terminal Session Detection,analyzes,Network Traffic
+produces,Outbound Internet Network Traffic,Detect,User Geolocation Logon Pattern Analysis,analyzes,Network Traffic
+produces,Outbound Internet Network Traffic,Detect,Client-server Payload Profiling,analyzes,Network Traffic
+produces,Outbound Internet Network Traffic,Detect,Network Traffic Community Deviation,analyzes,Network Traffic
+produces,Outbound Internet Network Traffic,Detect,Per Host Download-Upload Ratio Analysis,analyzes,Network Traffic
+produces,Outbound Internet Network Traffic,Detect,Protocol Metadata Anomaly Detection,analyzes,Network Traffic
+produces,Outbound Internet Network Traffic,Model,Asset Vulnerability Enumeration,evaluates,Digital Artifact
+produces,Outbound Internet Network Traffic,Isolate,Network Traffic Filtering,filters,Network Traffic
+produces,Outbound Internet Network Traffic,Isolate,Outbound Traffic Filtering,filters,Outbound Network Traffic
+modifies,Executable Binary,Deceive,Decoy File,spoofs,File
+creates,Executable File,Detect,Emulated File Analysis,analyzes,Executable File
+modifies,Executable Binary,Detect,Dynamic Analysis,analyzes,Executable File
+modifies,Executable Binary,Evict,File Removal,deletes,File
+modifies,Executable Binary,Harden,File Encryption,encrypts,File
+modifies,Executable Binary,Harden,Local File Permissions,restricts,File
+modifies,Executable Binary,Isolate,Executable Denylisting,blocks,Executable File
+creates,Executable File,Isolate,Executable Allowlisting,blocks,Executable File
+modifies,Executable Binary,Detect,File Analysis,analyzes,File
+creates,JavaScript Blob,Model,Asset Vulnerability Enumeration,evaluates,Digital Artifact
+no defensive relations yet,,,,,
+creates,Executable File,Isolate,Executable Denylisting,blocks,Executable File
+creates,Executable File,Isolate,Executable Allowlisting,blocks,Executable File
+creates,Executable File,Model,Asset Vulnerability Enumeration,evaluates,Digital Artifact
+creates,Executable File,Harden,Local File Permissions,restricts,File
+creates,Executable File,Harden,File Encryption,encrypts,File
+creates,Executable File,Detect,Dynamic Analysis,analyzes,Executable File
+creates,Executable File,Detect,Emulated File Analysis,analyzes,Executable File
+creates,Executable File,Evict,File Removal,deletes,File
+creates,Executable File,Deceive,Decoy File,spoofs,File
+creates,Executable File,Detect,File Analysis,analyzes,File
+no defensive relations yet,,,,,
+no defensive relations yet,,,,,
+adds,Office Application File,Deceive,Decoy File,spoofs,File
+may-add,Executable Script,Detect,Dynamic Analysis,analyzes,Executable File
+adds,Office Application File,Detect,Emulated File Analysis,analyzes,Document File
+adds,Office Application File,Evict,File Removal,deletes,File
+may-add,Executable Script,Harden,File Encryption,encrypts,File
+adds,Software,Harden,Software Update,updates,Software
+may-modify,System Configuration Database,Harden,System Configuration Permissions,restricts,System Configuration Database
+adds,Office Application File,Harden,Local File Permissions,restricts,File
+may-add,Executable Script,Isolate,Executable Denylisting,blocks,Executable File
+may-add,Executable Script,Isolate,Executable Allowlisting,blocks,Executable File
+adds,Software,Model,Software Inventory,inventories,Software
+modifies,Application Configuration Database,Model,Asset Vulnerability Enumeration,evaluates,Digital Artifact
+modifies,Application Configuration Database,Model,Configuration Inventory,inventories,Configuration Resource
+adds,Office Application File,Model,Data Inventory,inventories,Document File
+may-add,Executable Script,Detect,File Analysis,analyzes,File
+may-add,Executable Script,Detect,Dynamic Analysis,analyzes,Executable File
+may-add,Executable Script,Detect,Emulated File Analysis,analyzes,Executable File
+may-add,Executable Script,Deceive,Decoy File,spoofs,File
+may-add,Executable Script,Evict,File Removal,deletes,File
+may-add,Executable Script,Harden,File Encryption,encrypts,File
+may-add,Executable Script,Harden,Local File Permissions,restricts,File
+may-add,Executable Script,Isolate,Executable Denylisting,blocks,Executable File
+may-add,Executable Script,Isolate,Executable Allowlisting,blocks,Executable File
+may-add,Executable Script,Model,Asset Vulnerability Enumeration,evaluates,Digital Artifact
+may-modify,System Configuration Database Record,Model,Configuration Inventory,inventories,Configuration Resource
+may-add,Executable Script,Detect,File Analysis,analyzes,File
+accesses,Credential,Deceive,Decoy User Credential,spoofs,Credential
+accesses,Password File,Deceive,Decoy File,spoofs,File
+produces,Intranet Administrative Network Traffic,Detect,Administrative Network Activity Analysis,analyzes,Intranet Administrative Network Traffic
+produces,Intranet Administrative Network Traffic,Detect,Protocol Metadata Anomaly Detection,analyzes,Network Traffic
+produces,Intranet Administrative Network Traffic,Detect,Connection Attempt Analysis,analyzes,Intranet Network Traffic
+produces,Intranet Administrative Network Traffic,Detect,Per Host Download-Upload Ratio Analysis,analyzes,Network Traffic
+produces,Intranet Administrative Network Traffic,Detect,Client-server Payload Profiling,analyzes,Network Traffic
+produces,Intranet Administrative Network Traffic,Detect,Network Traffic Community Deviation,analyzes,Network Traffic
+produces,Intranet Administrative Network Traffic,Detect,Remote Terminal Session Detection,analyzes,Network Traffic
+accesses,Encrypted Credential,Detect,Credential Compromise Scope Analysis,analyzes,Credential
+produces,Intranet Administrative Network Traffic,Detect,User Geolocation Logon Pattern Analysis,analyzes,Network Traffic
+accesses,Process,Detect,Process Spawn Analysis,analyzes,Process
+may-access,Process,Detect,Process Self-Modification Detection,analyzes,Process
+accesses,Credential,Evict,Credential Revoking,deletes,Credential
+accesses,Encrypted Credential,Evict,Authentication Cache Invalidation,deletes,Credential
+accesses,Authentication Service,Evict,Process Suspension,suspends,Process
+may-access,Process,Evict,Process Termination,terminates,Process
+accesses,Password File,Evict,File Removal,deletes,File
+accesses,Encrypted Credential,Harden,Credential Transmission Scoping,restricts,Credential
+accesses,Credential,Harden,Credential Rotation,regenerates,Credential
+accesses,Password File,Harden,File Encryption,encrypts,File
+accesses,Password File,Harden,Local File Permissions,restricts,File
+accesses,Process,Isolate,Hardware-based Process Isolation,isolates,Process
+produces,Intranet Administrative Network Traffic,Isolate,Network Traffic Filtering,filters,Network Traffic
+accesses,Process,Model,Asset Vulnerability Enumeration,evaluates,Digital Artifact
+may-access,System Password Database,Model,Data Inventory,inventories,Database
+accesses,Operating System File,Detect,File Analysis,analyzes,File
+accesses,Operating System File,Detect,System File Analysis,analyzes,Operating System File
+accesses,Authentication Service,Detect,Process Lineage Analysis,analyzes,Process
+accesses,Authentication Service,Isolate,Mandatory Access Control,isolates,Process
+accesses,Process,Detect,Process Self-Modification Detection,analyzes,Process
+accesses,Process,Detect,Process Spawn Analysis,analyzes,Process
+accesses,Credential,Deceive,Decoy User Credential,spoofs,Credential
+accesses,Process,Evict,Process Termination,terminates,Process
+accesses,Credential,Detect,Credential Compromise Scope Analysis,analyzes,Credential
+accesses,Authentication Service,Evict,Process Suspension,suspends,Process
+accesses,Authentication Service,Isolate,Hardware-based Process Isolation,isolates,Process
+accesses,Process,Model,Asset Vulnerability Enumeration,evaluates,Digital Artifact
+accesses,Credential,Harden,Credential Transmission Scoping,restricts,Credential
+accesses,Credential,Harden,Credential Rotation,regenerates,Credential
+accesses,Process,Detect,Process Lineage Analysis,analyzes,Process
+accesses,Credential,Evict,Authentication Cache Invalidation,deletes,Credential
+accesses,Credential,Evict,Credential Revoking,deletes,Credential
+accesses,Process,Isolate,Mandatory Access Control,isolates,Process
+may-access,Process,Detect,Process Self-Modification Detection,analyzes,Process
+may-access,Process,Detect,Process Spawn Analysis,analyzes,Process
+accesses,Credential,Deceive,Decoy User Credential,spoofs,Credential
+accesses,Credential,Detect,Credential Compromise Scope Analysis,analyzes,Credential
+may-access,System Password Database,Model,Asset Vulnerability Enumeration,evaluates,Digital Artifact
+may-access,System Password Database,Model,Data Inventory,inventories,Database
+may-access,Process,Evict,Process Termination,terminates,Process
+may-access,Process,Evict,Process Suspension,suspends,Process
+may-access,Process,Isolate,Hardware-based Process Isolation,isolates,Process
+accesses,Credential,Harden,Credential Transmission Scoping,restricts,Credential
+accesses,Credential,Harden,Credential Rotation,regenerates,Credential
+accesses,Credential,Evict,Authentication Cache Invalidation,deletes,Credential
+accesses,Credential,Evict,Credential Revoking,deletes,Credential
+may-access,Process,Detect,Process Lineage Analysis,analyzes,Process
+may-access,Process,Isolate,Mandatory Access Control,isolates,Process
+accesses,Encrypted Credential,Deceive,Decoy User Credential,spoofs,Credential
+accesses,Encrypted Credential,Detect,Credential Compromise Scope Analysis,analyzes,Credential
+accesses,Encrypted Credential,Evict,Credential Revoking,deletes,Credential
+may-modify,Log,Model,Asset Vulnerability Enumeration,evaluates,Digital Artifact
+accesses,Encrypted Credential,Evict,Authentication Cache Invalidation,deletes,Credential
+accesses,Encrypted Credential,Harden,Credential Transmission Scoping,restricts,Credential
+accesses,Encrypted Credential,Harden,Credential Rotation,regenerates,Credential
+produces,File,Deceive,Decoy File,spoofs,File
+produces,Email,Detect,Homoglyph Detection,analyzes,Email
+produces,URL,Detect,URL Analysis,analyzes,URL
+produces,Email,Detect,Dynamic Analysis,analyzes,Document File
+produces,Email,Detect,Emulated File Analysis,analyzes,Document File
+produces,Inbound Internet Mail Traffic,Detect,Protocol Metadata Anomaly Detection,analyzes,Network Traffic
+produces,Inbound Internet Mail Traffic,Detect,Remote Terminal Session Detection,analyzes,Network Traffic
+produces,Inbound Internet Mail Traffic,Detect,Inbound Session Volume Analysis,analyzes,Inbound Internet Network Traffic
+produces,Inbound Internet Mail Traffic,Detect,Network Traffic Community Deviation,analyzes,Network Traffic
+produces,Inbound Internet Mail Traffic,Detect,Client-server Payload Profiling,analyzes,Network Traffic
+produces,Inbound Internet Mail Traffic,Detect,Per Host Download-Upload Ratio Analysis,analyzes,Network Traffic
+produces,Inbound Internet Mail Traffic,Detect,User Geolocation Logon Pattern Analysis,analyzes,Network Traffic
+produces,Email,Detect,Sender Reputation Analysis,analyzes,Email
+produces,Email,Detect,Sender MTA Reputation Analysis,analyzes,Email
+produces,Email,Evict,File Removal,deletes,File
+produces,Email,Harden,Local File Permissions,restricts,File
+produces,File,Harden,File Encryption,encrypts,File
+produces,Inbound Internet Mail Traffic,Isolate,Network Traffic Filtering,filters,Network Traffic
+produces,Email,Model,Asset Vulnerability Enumeration,evaluates,Digital Artifact
+produces,Email,Model,Data Inventory,inventories,Email
+produces,File,Detect,File Analysis,analyzes,File
+produces,URL,Detect,Identifier Analysis,analyzes,Identifier
+produces,URL,Detect,URL Reputation Analysis,analyzes,URL
+produces,Email,Evict,Email Removal,deletes,Email
+produces,Inbound Internet Mail Traffic,Isolate,Inbound Traffic Filtering,filters,Inbound Network Traffic
+produces,Email,Deceive,Decoy File,spoofs,File
+produces,Email,Detect,Dynamic Analysis,analyzes,Document File
+produces,Email,Detect,Emulated File Analysis,analyzes,Document File
+produces,Inbound Internet Mail Traffic,Detect,Network Traffic Community Deviation,analyzes,Network Traffic
+produces,Inbound Internet Mail Traffic,Detect,Client-server Payload Profiling,analyzes,Network Traffic
+produces,Inbound Internet Mail Traffic,Detect,Remote Terminal Session Detection,analyzes,Network Traffic
+produces,Inbound Internet Mail Traffic,Detect,Inbound Session Volume Analysis,analyzes,Inbound Internet Network Traffic
+produces,Inbound Internet Mail Traffic,Detect,Per Host Download-Upload Ratio Analysis,analyzes,Network Traffic
+produces,Inbound Internet Mail Traffic,Detect,Protocol Metadata Anomaly Detection,analyzes,Network Traffic
+produces,Email,Evict,File Removal,deletes,File
+produces,Email,Detect,Sender Reputation Analysis,analyzes,Email
+produces,Email,Detect,Sender MTA Reputation Analysis,analyzes,Email
+produces,Email,Model,Data Inventory,inventories,Document File
+produces,Inbound Internet Mail Traffic,Model,Asset Vulnerability Enumeration,evaluates,Digital Artifact
+produces,Email,Harden,File Encryption,encrypts,File
+produces,Email,Harden,Local File Permissions,restricts,File
+produces,Email,Detect,Homoglyph Detection,analyzes,Email
+produces,Inbound Internet Mail Traffic,Isolate,Network Traffic Filtering,filters,Network Traffic
+produces,Inbound Internet Mail Traffic,Detect,User Geolocation Logon Pattern Analysis,analyzes,Network Traffic
+produces,Email,Evict,Email Removal,deletes,Email
+produces,Inbound Internet Mail Traffic,Isolate,Inbound Traffic Filtering,filters,Inbound Network Traffic
+produces,Email,Detect,File Analysis,analyzes,File
+produces,Inbound Internet Mail Traffic,Detect,Client-server Payload Profiling,analyzes,Network Traffic
+produces,Inbound Internet Mail Traffic,Detect,Network Traffic Community Deviation,analyzes,Network Traffic
+produces,Inbound Internet Mail Traffic,Detect,Remote Terminal Session Detection,analyzes,Network Traffic
+produces,Inbound Internet Mail Traffic,Detect,Per Host Download-Upload Ratio Analysis,analyzes,Network Traffic
+produces,Inbound Internet Mail Traffic,Detect,Protocol Metadata Anomaly Detection,analyzes,Network Traffic
+produces,Inbound Internet Mail Traffic,Detect,Inbound Session Volume Analysis,analyzes,Inbound Internet Network Traffic
+produces,Email,Detect,Dynamic Analysis,analyzes,Document File
+produces,Email,Detect,Emulated File Analysis,analyzes,Document File
+produces,Email,Deceive,Decoy File,spoofs,File
+produces,URL,Detect,URL Analysis,analyzes,URL
+produces,URL,Detect,Homoglyph Detection,analyzes,URL
+produces,Inbound Internet Mail Traffic,Detect,User Geolocation Logon Pattern Analysis,analyzes,Network Traffic
+produces,Email,Evict,File Removal,deletes,File
+produces,Email,Detect,Sender MTA Reputation Analysis,analyzes,Email
+produces,Email,Detect,Sender Reputation Analysis,analyzes,Email
+produces,Email,Harden,Local File Permissions,restricts,File
+produces,Email,Harden,File Encryption,encrypts,File
+produces,Email,Model,Data Inventory,inventories,Email
+produces,Email,Model,Asset Vulnerability Enumeration,evaluates,Digital Artifact
+produces,Inbound Internet Mail Traffic,Isolate,Network Traffic Filtering,filters,Network Traffic
+produces,Email,Evict,Email Removal,deletes,Email
+produces,Inbound Internet Mail Traffic,Isolate,Inbound Traffic Filtering,filters,Inbound Network Traffic
+produces,URL,Detect,Identifier Analysis,analyzes,Identifier
+produces,Email,Detect,File Analysis,analyzes,File
+produces,URL,Detect,URL Reputation Analysis,analyzes,URL
+may-invoke,Create Process,Detect,Process Spawn Analysis,analyzes,Create Process
+may-invoke,Create Process,Detect,System Call Analysis,analyzes,System Call
+may-invoke,Create Process,Isolate,Executable Allowlisting,restricts,Create Process
+may-invoke,Create Process,Isolate,Hardware-based Process Isolation,restricts,Create Process
+may-invoke,Create Process,Isolate,Executable Denylisting,restricts,Create Process
+may-invoke,Create Process,Model,Asset Vulnerability Enumeration,evaluates,Digital Artifact
+may-invoke,Create Process,Isolate,Mandatory Access Control,restricts,Create Process
+may-invoke,Get Running Processes,Isolate,System Call Filtering,filters,System Call
+produces,Outbound Internet Encrypted Web Traffic,Detect,Protocol Metadata Anomaly Detection,analyzes,Network Traffic
+produces,Outbound Internet Network Traffic,Detect,Relay Pattern Analysis,analyzes,Outbound Internet Network Traffic
+produces,Outbound Internet Network Traffic,Detect,Network Traffic Community Deviation,analyzes,Network Traffic
+produces,Outbound Internet Network Traffic,Detect,Per Host Download-Upload Ratio Analysis,analyzes,Network Traffic
+produces,Intranet Network Traffic,Detect,Client-server Payload Profiling,analyzes,Network Traffic
+produces,Outbound Internet Network Traffic,Detect,Remote Terminal Session Detection,analyzes,Network Traffic
+produces,Intranet Network Traffic,Detect,Connection Attempt Analysis,analyzes,Intranet Network Traffic
+produces,Intranet Network Traffic,Detect,User Geolocation Logon Pattern Analysis,analyzes,Network Traffic
+produces,Outbound Internet Encrypted Web Traffic,Isolate,Network Traffic Filtering,filters,Network Traffic
+produces,Intranet Network Traffic,Model,Asset Vulnerability Enumeration,evaluates,Digital Artifact
+produces,Outbound Internet Network Traffic,Isolate,Outbound Traffic Filtering,filters,Outbound Network Traffic
+produces,Outbound Internet Network Traffic,Detect,Network Traffic Community Deviation,analyzes,Network Traffic
+produces,Outbound Internet Network Traffic,Detect,Per Host Download-Upload Ratio Analysis,analyzes,Network Traffic
+produces,Outbound Internet Network Traffic,Detect,Protocol Metadata Anomaly Detection,analyzes,Network Traffic
+produces,Outbound Internet Network Traffic,Detect,Relay Pattern Analysis,analyzes,Outbound Internet Network Traffic
+produces,Outbound Internet Network Traffic,Detect,Client-server Payload Profiling,analyzes,Network Traffic
+produces,Outbound Internet Network Traffic,Isolate,Outbound Traffic Filtering,filters,Outbound Network Traffic
+produces,Outbound Internet Network Traffic,Model,Asset Vulnerability Enumeration,evaluates,Digital Artifact
+produces,Outbound Internet Network Traffic,Detect,Remote Terminal Session Detection,analyzes,Network Traffic
+produces,Outbound Internet Network Traffic,Detect,User Geolocation Logon Pattern Analysis,analyzes,Network Traffic
+produces,Outbound Internet Network Traffic,Isolate,Network Traffic Filtering,filters,Network Traffic
+produces,Outbound Internet Network Traffic,Detect,Network Traffic Community Deviation,analyzes,Network Traffic
+produces,Outbound Internet Network Traffic,Detect,Per Host Download-Upload Ratio Analysis,analyzes,Network Traffic
+produces,Outbound Internet Network Traffic,Detect,Protocol Metadata Anomaly Detection,analyzes,Network Traffic
+produces,Outbound Internet Network Traffic,Detect,Relay Pattern Analysis,analyzes,Outbound Internet Network Traffic
+produces,Outbound Internet Network Traffic,Detect,Remote Terminal Session Detection,analyzes,Network Traffic
+produces,Outbound Internet Network Traffic,Detect,Client-server Payload Profiling,analyzes,Network Traffic
+produces,Outbound Internet Network Traffic,Isolate,Outbound Traffic Filtering,filters,Outbound Network Traffic
+produces,Outbound Internet Network Traffic,Detect,User Geolocation Logon Pattern Analysis,analyzes,Network Traffic
+produces,Outbound Internet Network Traffic,Isolate,Network Traffic Filtering,filters,Network Traffic
+produces,Outbound Internet Network Traffic,Model,Asset Vulnerability Enumeration,evaluates,Digital Artifact
+invokes,Create Process,Detect,System Call Analysis,analyzes,System Call
+invokes,Create Process,Detect,Process Spawn Analysis,analyzes,Create Process
+creates,Property List File,Deceive,Decoy File,spoofs,File
+creates,Property List File,Harden,Local File Permissions,restricts,File
+creates,Property List File,Harden,File Encryption,encrypts,File
+invokes,Create Process,Isolate,Executable Allowlisting,restricts,Create Process
+invokes,Create Process,Isolate,Executable Denylisting,restricts,Create Process
+invokes,Create Process,Isolate,Hardware-based Process Isolation,restricts,Create Process
+invokes,Create Process,Model,Asset Vulnerability Enumeration,evaluates,Digital Artifact
+creates,Property List File,Evict,File Removal,deletes,File
+modifies,Task Schedule,Detect,Scheduled Job Analysis,analyzes,Task Schedule
+creates,Property List File,Detect,File Analysis,analyzes,File
+invokes,Create Process,Isolate,System Call Filtering,filters,System Call
+invokes,Create Process,Isolate,Mandatory Access Control,restricts,Create Process
+modifies,Task Schedule,Detect,Scheduled Job Analysis,analyzes,Task Schedule
+invokes,Create Process,Isolate,Mandatory Access Control,restricts,Create Process
+invokes,Create Process,Isolate,System Call Filtering,filters,System Call
+invokes,Create Process,Detect,Process Spawn Analysis,analyzes,Create Process
+invokes,Create Process,Detect,System Call Analysis,analyzes,System Call
+invokes,Create Process,Isolate,Executable Allowlisting,restricts,Create Process
+invokes,Create Process,Isolate,Executable Denylisting,restricts,Create Process
+invokes,Create Process,Isolate,Hardware-based Process Isolation,restricts,Create Process
+modifies,Task Schedule,Model,Asset Vulnerability Enumeration,evaluates,Digital Artifact
+may-invoke,Get Screen Capture,Isolate,System Call Filtering,filters,System Call
+may-invoke,Get Screen Capture,Model,Asset Vulnerability Enumeration,evaluates,Digital Artifact
+may-invoke,Get Screen Capture,Detect,System Call Analysis,analyzes,System Call
+may-invoke,Get Running Processes,Detect,System Call Analysis,analyzes,System Call
+may-access,System Firewall Configuration,Model,Configuration Inventory,inventories,Configuration Resource
+may-invoke,Get Running Processes,Model,Asset Vulnerability Enumeration,evaluates,Digital Artifact
+may-invoke,Get Running Processes,Isolate,System Call Filtering,filters,System Call
+may-invoke,Get Running Processes,Model,Asset Vulnerability Enumeration,evaluates,Digital Artifact
+may-access,System Configuration Database Record,Model,Configuration Inventory,inventories,Configuration Resource
+may-invoke,Get Running Processes,Detect,System Call Analysis,analyzes,System Call
+may-invoke,Get Running Processes,Isolate,System Call Filtering,filters,System Call
+may-produce,Network Traffic,Detect,Network Traffic Community Deviation,analyzes,Network Traffic
+may-produce,Network Traffic,Detect,Per Host Download-Upload Ratio Analysis,analyzes,Network Traffic
+may-produce,Network Traffic,Detect,Protocol Metadata Anomaly Detection,analyzes,Network Traffic
+may-produce,Network Traffic,Detect,Remote Terminal Session Detection,analyzes,Network Traffic
+may-produce,Network Traffic,Detect,Client-server Payload Profiling,analyzes,Network Traffic
+loads,Shared Library File,Deceive,Decoy File,spoofs,File
+may-produce,Network Traffic,Detect,User Geolocation Logon Pattern Analysis,analyzes,Network Traffic
+invokes,Create Process,Detect,System Call Analysis,analyzes,System Call
+invokes,Create Process,Detect,Process Spawn Analysis,analyzes,Create Process
+loads,Shared Library File,Harden,File Encryption,encrypts,File
+loads,Shared Library File,Harden,Local File Permissions,restricts,File
+may-add,Software,Harden,Software Update,updates,Software
+may-modify,System Configuration Database,Harden,System Configuration Permissions,restricts,System Configuration Database
+loads,Shared Library File,Evict,File Removal,deletes,File
+modifies,Process Segment,Harden,Process Segment Execution Prevention,neutralizes,Process Segment
+modifies,Process Segment,Harden,Segment Address Offset Randomization,obfuscates,Process Segment
+invokes,Create Process,Isolate,Hardware-based Process Isolation,restricts,Create Process
+invokes,Create Process,Isolate,Executable Allowlisting,restricts,Create Process
+invokes,Create Process,Isolate,Executable Denylisting,restricts,Create Process
+may-produce,Network Traffic,Isolate,Network Traffic Filtering,filters,Network Traffic
+invokes,Create Process,Model,Asset Vulnerability Enumeration,evaluates,Digital Artifact
+may-add,Software,Model,Software Inventory,inventories,Software
+may-modify,System Configuration Database Record,Model,Configuration Inventory,inventories,Configuration Resource
+may-modify,System Configuration Database,Model,Data Inventory,inventories,Database
+loads,Shared Library File,Detect,File Analysis,analyzes,File
+invokes,Create File,Detect,File Creation Analysis,analyzes,Create File
+invokes,Create Process,Isolate,Mandatory Access Control,restricts,Create Process
+invokes,Create File,Isolate,System Call Filtering,filters,System Call
+may-produce,Network Traffic,Detect,Client-server Payload Profiling,analyzes,Network Traffic
+may-produce,Network Traffic,Detect,Network Traffic Community Deviation,analyzes,Network Traffic
+may-produce,Network Traffic,Detect,Protocol Metadata Anomaly Detection,analyzes,Network Traffic
+may-produce,Network Traffic,Detect,Remote Terminal Session Detection,analyzes,Network Traffic
+may-produce,Network Traffic,Detect,Per Host Download-Upload Ratio Analysis,analyzes,Network Traffic
+invokes,Create Process,Detect,Process Spawn Analysis,analyzes,Create Process
+invokes,Create Process,Detect,System Call Analysis,analyzes,System Call
+may-produce,Network Traffic,Detect,User Geolocation Logon Pattern Analysis,analyzes,Network Traffic
+invokes,Create Process,Isolate,Executable Denylisting,restricts,Create Process
+invokes,Create Process,Isolate,Hardware-based Process Isolation,restricts,Create Process
+may-produce,Network Traffic,Model,Asset Vulnerability Enumeration,evaluates,Digital Artifact
+may-produce,Network Traffic,Isolate,Network Traffic Filtering,filters,Network Traffic
+invokes,Create Process,Isolate,Executable Allowlisting,restricts,Create Process
+invokes,Create Process,Isolate,System Call Filtering,filters,System Call
+invokes,Create Process,Isolate,Mandatory Access Control,restricts,Create Process
+no defensive relations yet,,,,,
+invokes,Create Process,Detect,System Call Analysis,analyzes,System Call
+invokes,Create Process,Isolate,Executable Allowlisting,restricts,Create Process
+invokes,Create Process,Isolate,Executable Denylisting,restricts,Create Process
+loads,Shared Library File,Harden,File Encryption,encrypts,File
+loads,Shared Library File,Harden,Local File Permissions,restricts,File
+loads,Shared Library File,Deceive,Decoy File,spoofs,File
+loads,Shared Library File,Evict,File Removal,deletes,File
+invokes,Create Process,Detect,Process Spawn Analysis,analyzes,Create Process
+invokes,Create Process,Isolate,Hardware-based Process Isolation,restricts,Create Process
+invokes,Create Process,Model,Asset Vulnerability Enumeration,evaluates,Digital Artifact
+invokes,Create Process,Isolate,System Call Filtering,filters,System Call
+invokes,Create Process,Isolate,Mandatory Access Control,restricts,Create Process
+loads,Shared Library File,Detect,File Analysis,analyzes,File
+may-access,Decoy Artifact,Model,Asset Vulnerability Enumeration,evaluates,Digital Artifact
+may-access,Decoy Artifact,Deceive,Decoy Environment,manages,Decoy Artifact
+may-invoke,Create Process,Detect,Process Spawn Analysis,analyzes,Create Process
+may-invoke,Create Process,Detect,System Call Analysis,analyzes,System Call
+may-invoke,Create Process,Isolate,System Call Filtering,filters,System Call
+may-invoke,Create Process,Isolate,Mandatory Access Control,restricts,Create Process
+may-invoke,Create Process,Isolate,Executable Allowlisting,restricts,Create Process
+may-invoke,Create Process,Isolate,Executable Denylisting,restricts,Create Process
+may-invoke,Create Process,Isolate,Hardware-based Process Isolation,restricts,Create Process
+may-invoke,Create Process,Detect,System Call Analysis,analyzes,System Call
+may-invoke,Create Process,Detect,Process Spawn Analysis,analyzes,Create Process
+may-execute,Executable Script,Deceive,Decoy File,spoofs,File
+may-execute,Executable Script,Detect,Dynamic Analysis,analyzes,Executable File
+may-execute,Executable Script,Detect,Emulated File Analysis,analyzes,Executable File
+may-execute,Executable Script,Harden,File Encryption,encrypts,File
+may-execute,Executable Script,Harden,Local File Permissions,restricts,File
+may-execute,Executable Script,Evict,File Removal,deletes,File
+may-invoke,Create Process,Isolate,Hardware-based Process Isolation,restricts,Create Process
+may-execute,Executable Script,Isolate,Executable Denylisting,blocks,Executable File
+may-invoke,Create Process,Isolate,Executable Allowlisting,restricts,Create Process
+may-invoke,Create Process,Model,Asset Vulnerability Enumeration,evaluates,Digital Artifact
+may-execute,Executable Script,Detect,File Analysis,analyzes,File
+may-invoke,Create Process,Isolate,System Call Filtering,filters,System Call
+may-invoke,Create Process,Isolate,Mandatory Access Control,restricts,Create Process
+may-invoke,Get Open Sockets,Detect,System Call Analysis,analyzes,System Call
+may-invoke,Get Open Sockets,Model,Asset Vulnerability Enumeration,evaluates,Digital Artifact
+may-invoke,Get Open Sockets,Isolate,System Call Filtering,filters,System Call
+may-invoke,Copy Token,Detect,System Call Analysis,analyzes,System Call
+may-access,Directory Service,Detect,Process Spawn Analysis,analyzes,Process
+may-access,Directory Service,Detect,Process Self-Modification Detection,analyzes,Process
+may-access,Password File,Deceive,Decoy File,spoofs,File
+may-access,Password File,Evict,File Removal,deletes,File
+may-access,Directory Service,Evict,Process Termination,terminates,Process
+may-access,Directory Service,Evict,Process Suspension,suspends,Process
+may-invoke,Create Process,Isolate,Hardware-based Process Isolation,restricts,Create Process
+may-invoke,Create Process,Isolate,Executable Allowlisting,restricts,Create Process
+may-invoke,Create Process,Isolate,Executable Denylisting,restricts,Create Process
+may-access,Password File,Harden,Local File Permissions,restricts,File
+may-access,Password File,Harden,File Encryption,encrypts,File
+may-access,Process Segment,Harden,Process Segment Execution Prevention,neutralizes,Process Segment
+may-access,Process Segment,Harden,Segment Address Offset Randomization,obfuscates,Process Segment
+may-access,Password File,Model,Asset Vulnerability Enumeration,evaluates,Digital Artifact
+may-access,Directory Service,Harden,Domain Trust Policy,restricts,Directory Service
+may-access,Password File,Model,Data Inventory,inventories,Database
+may-access,Password File,Detect,File Analysis,analyzes,File
+may-access,Directory Service,Detect,Process Lineage Analysis,analyzes,Process
+may-invoke,Create Process,Isolate,System Call Filtering,filters,System Call
+may-invoke,Create Process,Isolate,Mandatory Access Control,restricts,Create Process
+accesses,Credential,Detect,Credential Compromise Scope Analysis,analyzes,Credential
+accesses,Credential,Evict,Authentication Cache Invalidation,deletes,Credential
+accesses,Credential,Evict,Credential Revoking,deletes,Credential
+accesses,File,Evict,File Removal,deletes,File
+accesses,File,Harden,Local File Permissions,restricts,File
+accesses,System Configuration Database,Harden,System Configuration Permissions,restricts,System Configuration Database
+accesses,File,Harden,File Encryption,encrypts,File
+accesses,Group Policy,Model,Configuration Inventory,inventories,Configuration Resource
+accesses,Cloud Instance Metadata,Model,Asset Vulnerability Enumeration,evaluates,Digital Artifact
+accesses,Credential,Harden,Credential Transmission Scoping,restricts,Credential
+accesses,Credential,Harden,Credential Rotation,regenerates,Credential
+accesses,Credential,Deceive,Decoy User Credential,spoofs,Credential
+accesses,File,Deceive,Decoy File,spoofs,File
+accesses,System Configuration Database,Model,Data Inventory,inventories,Database
+accesses,Group Policy,Model,Access Modeling,maps,Access Control Configuration
+accesses,Group Policy,Model,Network Traffic Policy Mapping,maps,Access Control Configuration
+accesses,Command History Log File,Detect,File Analysis,analyzes,File
+accesses,File,Harden,Local File Permissions,restricts,File
+accesses,File,Harden,File Encryption,encrypts,File
+accesses,File,Evict,File Removal,deletes,File
+accesses,File,Deceive,Decoy File,spoofs,File
+accesses,File,Model,Asset Vulnerability Enumeration,evaluates,Digital Artifact
+accesses,Credential,Deceive,Decoy User Credential,spoofs,Credential
+accesses,Credential,Detect,Credential Compromise Scope Analysis,analyzes,Credential
+accesses,Credential,Evict,Authentication Cache Invalidation,deletes,Credential
+accesses,Credential,Evict,Credential Revoking,deletes,Credential
+accesses,Credential,Harden,Credential Transmission Scoping,restricts,Credential
+accesses,Credential,Harden,Credential Rotation,regenerates,Credential
+accesses,File,Detect,File Analysis,analyzes,File
+produces,Outbound Internet Web Traffic,Detect,Protocol Metadata Anomaly Detection,analyzes,Network Traffic
+produces,Outbound Internet Web Traffic,Detect,Relay Pattern Analysis,analyzes,Outbound Internet Network Traffic
+produces,Outbound Internet Web Traffic,Detect,Network Traffic Community Deviation,analyzes,Network Traffic
+produces,Outbound Internet Web Traffic,Detect,Per Host Download-Upload Ratio Analysis,analyzes,Network Traffic
+executes,Executable File,Deceive,Decoy File,spoofs,File
+produces,Outbound Internet Web Traffic,Detect,Client-server Payload Profiling,analyzes,Network Traffic
+produces,Outbound Internet Web Traffic,Detect,Remote Terminal Session Detection,analyzes,Network Traffic
+executes,Executable File,Detect,Dynamic Analysis,analyzes,Executable File
+executes,Executable File,Detect,Emulated File Analysis,analyzes,Executable File
+executes,Executable File,Harden,File Encryption,encrypts,File
+executes,Executable File,Harden,Local File Permissions,restricts,File
+accesses,URL,Detect,Homoglyph Detection,analyzes,URL
+accesses,URL,Detect,URL Analysis,analyzes,URL
+produces,Outbound Internet Web Traffic,Detect,User Geolocation Logon Pattern Analysis,analyzes,Network Traffic
+accesses,URL,Model,Asset Vulnerability Enumeration,evaluates,Digital Artifact
+executes,Executable File,Evict,File Removal,deletes,File
+executes,Executable File,Isolate,Executable Allowlisting,blocks,Executable File
+executes,Executable File,Isolate,Executable Denylisting,blocks,Executable File
+produces,Outbound Internet Web Traffic,Isolate,Network Traffic Filtering,filters,Network Traffic
+accesses,URL,Detect,Identifier Analysis,analyzes,Identifier
+executes,Executable File,Detect,File Analysis,analyzes,File
+accesses,URL,Detect,URL Reputation Analysis,analyzes,URL
+produces,Outbound Internet Web Traffic,Isolate,Outbound Traffic Filtering,filters,Outbound Network Traffic
+produces,Outbound Internet Web Traffic,Detect,Protocol Metadata Anomaly Detection,analyzes,Network Traffic
+produces,Outbound Internet Web Traffic,Detect,Remote Terminal Session Detection,analyzes,Network Traffic
+produces,Outbound Internet Web Traffic,Detect,Client-server Payload Profiling,analyzes,Network Traffic
+produces,Outbound Internet Web Traffic,Detect,Relay Pattern Analysis,analyzes,Outbound Internet Network Traffic
+accesses,URL,Detect,Homoglyph Detection,analyzes,URL
+accesses,URL,Detect,URL Analysis,analyzes,URL
+produces,Outbound Internet Web Traffic,Detect,Per Host Download-Upload Ratio Analysis,analyzes,Network Traffic
+produces,Outbound Internet Web Traffic,Detect,Network Traffic Community Deviation,analyzes,Network Traffic
+produces,Outbound Internet Web Traffic,Detect,User Geolocation Logon Pattern Analysis,analyzes,Network Traffic
+produces,Outbound Internet Web Traffic,Isolate,Network Traffic Filtering,filters,Network Traffic
+accesses,URL,Detect,URL Reputation Analysis,analyzes,URL
+produces,Outbound Internet Web Traffic,Isolate,Outbound Traffic Filtering,filters,Outbound Network Traffic
+accesses,URL,Model,Asset Vulnerability Enumeration,evaluates,Digital Artifact
+accesses,URL,Detect,Identifier Analysis,analyzes,Identifier
+executes,Executable File,Isolate,Executable Allowlisting,blocks,Executable File
+executes,Executable File,Isolate,Executable Denylisting,blocks,Executable File
+executes,Executable File,Model,Asset Vulnerability Enumeration,evaluates,Digital Artifact
+executes,Executable File,Deceive,Decoy File,spoofs,File
+executes,Executable File,Detect,Emulated File Analysis,analyzes,Executable File
+executes,Executable File,Detect,Dynamic Analysis,analyzes,Executable File
+executes,Executable File,Harden,File Encryption,encrypts,File
+executes,Executable File,Harden,Local File Permissions,restricts,File
+executes,Executable File,Detect,File Analysis,analyzes,File
+executes,Executable File,Evict,File Removal,deletes,File
+produces,Outbound Internet Web Traffic,Detect,Network Traffic Community Deviation,analyzes,Network Traffic
+produces,Outbound Internet Web Traffic,Detect,Per Host Download-Upload Ratio Analysis,analyzes,Network Traffic
+produces,Outbound Internet Web Traffic,Detect,Protocol Metadata Anomaly Detection,analyzes,Network Traffic
+produces,Outbound Internet Web Traffic,Detect,Client-server Payload Profiling,analyzes,Network Traffic
+produces,Outbound Internet Web Traffic,Isolate,Outbound Traffic Filtering,filters,Outbound Network Traffic
+produces,Outbound Internet Web Traffic,Model,Asset Vulnerability Enumeration,evaluates,Digital Artifact
+produces,Outbound Internet Web Traffic,Detect,Relay Pattern Analysis,analyzes,Outbound Internet Network Traffic
+produces,Outbound Internet Web Traffic,Detect,Remote Terminal Session Detection,analyzes,Network Traffic
+produces,Outbound Internet Web Traffic,Detect,User Geolocation Logon Pattern Analysis,analyzes,Network Traffic
+produces,Outbound Internet Web Traffic,Isolate,Network Traffic Filtering,filters,Network Traffic
+produces,Outbound Internet Web Traffic,Detect,Client-server Payload Profiling,analyzes,Network Traffic
+produces,Outbound Internet Web Traffic,Detect,Network Traffic Community Deviation,analyzes,Network Traffic
+produces,Outbound Internet Web Traffic,Detect,Per Host Download-Upload Ratio Analysis,analyzes,Network Traffic
+produces,Outbound Internet Web Traffic,Detect,Protocol Metadata Anomaly Detection,analyzes,Network Traffic
+produces,Outbound Internet Web Traffic,Detect,Relay Pattern Analysis,analyzes,Outbound Internet Network Traffic
+produces,Outbound Internet Web Traffic,Detect,Remote Terminal Session Detection,analyzes,Network Traffic
+produces,Outbound Internet Web Traffic,Detect,User Geolocation Logon Pattern Analysis,analyzes,Network Traffic
+produces,Outbound Internet Web Traffic,Isolate,Network Traffic Filtering,filters,Network Traffic
+produces,Outbound Internet Web Traffic,Model,Asset Vulnerability Enumeration,evaluates,Digital Artifact
+produces,Outbound Internet Web Traffic,Isolate,Outbound Traffic Filtering,filters,Outbound Network Traffic
+may-create,Intranet Administrative Network Traffic,Detect,Connection Attempt Analysis,analyzes,Intranet Network Traffic
+may-create,Intranet Administrative Network Traffic,Detect,Protocol Metadata Anomaly Detection,analyzes,Network Traffic
+may-create,Intranet Administrative Network Traffic,Detect,Remote Terminal Session Detection,analyzes,Network Traffic
+may-create,Intranet Administrative Network Traffic,Detect,Network Traffic Community Deviation,analyzes,Network Traffic
+may-create,Intranet Administrative Network Traffic,Detect,Per Host Download-Upload Ratio Analysis,analyzes,Network Traffic
+may-create,Intranet Administrative Network Traffic,Detect,Administrative Network Activity Analysis,analyzes,Intranet Administrative Network Traffic
+may-create,Intranet Administrative Network Traffic,Detect,Client-server Payload Profiling,analyzes,Network Traffic
+may-create,Intranet Administrative Network Traffic,Detect,User Geolocation Logon Pattern Analysis,analyzes,Network Traffic
+may-invoke,Create Process,Detect,Process Spawn Analysis,analyzes,Create Process
+may-invoke,Create Process,Detect,System Call Analysis,analyzes,System Call
+may-invoke,Create Process,Isolate,Hardware-based Process Isolation,restricts,Create Process
+may-invoke,Create Process,Isolate,Executable Allowlisting,restricts,Create Process
+may-invoke,Create Process,Isolate,Executable Denylisting,restricts,Create Process
+may-create,Intranet Administrative Network Traffic,Isolate,Network Traffic Filtering,filters,Network Traffic
+may-invoke,Create Process,Model,Asset Vulnerability Enumeration,evaluates,Digital Artifact
+may-invoke,Create Process,Isolate,Mandatory Access Control,restricts,Create Process
+may-invoke,Create Process,Isolate,System Call Filtering,filters,System Call

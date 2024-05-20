@@ -1,0 +1,121 @@
+﻿off rel,off artifact,D3FEND Tactic,D3FEND Technique,def rel,def artifact
+creates,Custom Archive File,Evict,File Removal,deletes,File
+creates,Custom Archive File,Harden,File Encryption,encrypts,File
+creates,Custom Archive File,Harden,Local File Permissions,restricts,File
+creates,Archive File,Deceive,Decoy File,spoofs,File
+creates,Archive File,Model,Asset Vulnerability Enumeration,evaluates,Digital Artifact
+creates,Custom Archive File,Detect,File Analysis,analyzes,File
+creates,Archive File,Deceive,Decoy File,spoofs,File
+creates,Archive File,Evict,File Removal,deletes,File
+creates,Archive File,Harden,File Encryption,encrypts,File
+creates,Archive File,Harden,Local File Permissions,restricts,File
+creates,Archive File,Model,Asset Vulnerability Enumeration,evaluates,Digital Artifact
+creates,Archive File,Detect,File Analysis,analyzes,File
+creates,Archive File,Deceive,Decoy File,spoofs,File
+creates,Archive File,Evict,File Removal,deletes,File
+creates,Archive File,Harden,File Encryption,encrypts,File
+creates,Archive File,Harden,Local File Permissions,restricts,File
+creates,Archive File,Model,Asset Vulnerability Enumeration,evaluates,Digital Artifact
+creates,Archive File,Detect,File Analysis,analyzes,File
+executes,Executable Script,Detect,Dynamic Analysis,analyzes,Executable File
+executes,Executable Script,Detect,Emulated File Analysis,analyzes,Executable File
+executes,Executable Script,Evict,File Removal,deletes,File
+executes,Executable Script,Deceive,Decoy File,spoofs,File
+executes,Executable Script,Model,Asset Vulnerability Enumeration,evaluates,Digital Artifact
+executes,Executable Script,Harden,File Encryption,encrypts,File
+executes,Executable Script,Isolate,Executable Denylisting,blocks,Executable File
+executes,Executable Script,Isolate,Executable Allowlisting,blocks,Executable File
+executes,Executable Script,Harden,Local File Permissions,restricts,File
+executes,Executable Script,Detect,File Analysis,analyzes,File
+executes,Executable Script,Deceive,Decoy File,spoofs,File
+executes,Executable Script,Detect,Dynamic Analysis,analyzes,Executable File
+executes,Executable Script,Detect,Emulated File Analysis,analyzes,Executable File
+executes,Executable Script,Evict,File Removal,deletes,File
+executes,Executable Script,Harden,File Encryption,encrypts,File
+executes,Executable Script,Harden,Local File Permissions,restricts,File
+executes,Executable Script,Isolate,Executable Allowlisting,blocks,Executable File
+executes,Executable Script,Isolate,Executable Denylisting,blocks,Executable File
+executes,Executable Script,Model,Asset Vulnerability Enumeration,evaluates,Digital Artifact
+executes,Executable Script,Detect,File Analysis,analyzes,File
+may-modify,Property List File,Deceive,Decoy File,spoofs,File
+modifies,Office Application File,Detect,Emulated File Analysis,analyzes,Document File
+modifies,Office Application File,Detect,Dynamic Analysis,analyzes,Document File
+modifies,Office Application File,Evict,File Removal,deletes,File
+may-create,Email Rule,Harden,Application Configuration Hardening,hardens,Application Configuration
+modifies,User Init Configuration File,Harden,File Encryption,encrypts,File
+may-create,Directory,Harden,Local File Permissions,restricts,Directory
+modifies,Storage,Harden,Disk Encryption,encrypts,Storage
+executes,Virtualization Software,Harden,Software Update,updates,Software
+may-modify,System Configuration Database,Harden,System Configuration Permissions,restricts,System Configuration Database
+modifies,Office Application File,Model,Data Inventory,inventories,Document File
+modifies,User Init Configuration File,Model,Asset Vulnerability Enumeration,evaluates,Digital Artifact
+executes,Virtualization Software,Model,Software Inventory,inventories,Software
+may-create,Email Rule,Model,Configuration Inventory,inventories,Configuration Resource
+creates,File,Detect,File Analysis,analyzes,File
+modifies,User Init Configuration File,Detect,User Session Init Config Analysis,analyzes,User Init Configuration File
+executes,Virtualization Software,Detect,Service Binary Verification,verifies,Service Application
+may-modify,Property List File,Deceive,Decoy File,spoofs,File
+may-modify,Property List File,Evict,File Removal,deletes,File
+may-modify,System Configuration Database,Model,Data Inventory,inventories,Database
+may-modify,System Configuration Database,Model,Asset Vulnerability Enumeration,evaluates,Digital Artifact
+may-modify,Property List File,Harden,File Encryption,encrypts,File
+may-modify,Property List File,Harden,Local File Permissions,restricts,File
+may-modify,System Configuration Database,Harden,System Configuration Permissions,restricts,System Configuration Database
+may-modify,Property List File,Detect,File Analysis,analyzes,File
+no defensive relations yet,,,,,
+no defensive relations yet,,,,,
+produces,Outbound Internet Encrypted Web Traffic,Detect,Protocol Metadata Anomaly Detection,analyzes,Network Traffic
+produces,Outbound Internet Network Traffic,Detect,Relay Pattern Analysis,analyzes,Outbound Internet Network Traffic
+produces,Outbound Internet Network Traffic,Detect,Network Traffic Community Deviation,analyzes,Network Traffic
+produces,Outbound Internet Network Traffic,Detect,Per Host Download-Upload Ratio Analysis,analyzes,Network Traffic
+produces,Intranet Network Traffic,Detect,Client-server Payload Profiling,analyzes,Network Traffic
+produces,Outbound Internet Network Traffic,Detect,Remote Terminal Session Detection,analyzes,Network Traffic
+produces,Intranet Network Traffic,Detect,Connection Attempt Analysis,analyzes,Intranet Network Traffic
+produces,Intranet Network Traffic,Detect,User Geolocation Logon Pattern Analysis,analyzes,Network Traffic
+produces,Outbound Internet Encrypted Web Traffic,Isolate,Network Traffic Filtering,filters,Network Traffic
+produces,Intranet Network Traffic,Model,Asset Vulnerability Enumeration,evaluates,Digital Artifact
+produces,Outbound Internet Network Traffic,Isolate,Outbound Traffic Filtering,filters,Outbound Network Traffic
+modifies,System Configuration Database Record,Model,Asset Vulnerability Enumeration,evaluates,Digital Artifact
+modifies,System Configuration Database Record,Model,Configuration Inventory,inventories,Configuration Resource
+no defensive relations yet,,,,,
+may-produce,Network Traffic,Detect,Network Traffic Community Deviation,analyzes,Network Traffic
+may-produce,Network Traffic,Detect,Per Host Download-Upload Ratio Analysis,analyzes,Network Traffic
+may-produce,Network Traffic,Detect,Protocol Metadata Anomaly Detection,analyzes,Network Traffic
+may-produce,Network Traffic,Detect,Remote Terminal Session Detection,analyzes,Network Traffic
+may-produce,Network Traffic,Detect,Client-server Payload Profiling,analyzes,Network Traffic
+loads,Shared Library File,Deceive,Decoy File,spoofs,File
+may-produce,Network Traffic,Detect,User Geolocation Logon Pattern Analysis,analyzes,Network Traffic
+invokes,Create Process,Detect,System Call Analysis,analyzes,System Call
+invokes,Create Process,Detect,Process Spawn Analysis,analyzes,Create Process
+loads,Shared Library File,Harden,File Encryption,encrypts,File
+loads,Shared Library File,Harden,Local File Permissions,restricts,File
+may-add,Software,Harden,Software Update,updates,Software
+may-modify,System Configuration Database,Harden,System Configuration Permissions,restricts,System Configuration Database
+loads,Shared Library File,Evict,File Removal,deletes,File
+modifies,Process Segment,Harden,Process Segment Execution Prevention,neutralizes,Process Segment
+modifies,Process Segment,Harden,Segment Address Offset Randomization,obfuscates,Process Segment
+invokes,Create Process,Isolate,Hardware-based Process Isolation,restricts,Create Process
+invokes,Create Process,Isolate,Executable Allowlisting,restricts,Create Process
+invokes,Create Process,Isolate,Executable Denylisting,restricts,Create Process
+may-produce,Network Traffic,Isolate,Network Traffic Filtering,filters,Network Traffic
+invokes,Create Process,Model,Asset Vulnerability Enumeration,evaluates,Digital Artifact
+may-add,Software,Model,Software Inventory,inventories,Software
+may-modify,System Configuration Database Record,Model,Configuration Inventory,inventories,Configuration Resource
+may-modify,System Configuration Database,Model,Data Inventory,inventories,Database
+loads,Shared Library File,Detect,File Analysis,analyzes,File
+invokes,Create File,Detect,File Creation Analysis,analyzes,Create File
+invokes,Create Process,Isolate,Mandatory Access Control,restricts,Create Process
+invokes,Create File,Isolate,System Call Filtering,filters,System Call
+invokes,Create Process,Detect,System Call Analysis,analyzes,System Call
+invokes,Create Process,Isolate,Executable Allowlisting,restricts,Create Process
+invokes,Create Process,Isolate,Executable Denylisting,restricts,Create Process
+loads,Shared Library File,Harden,File Encryption,encrypts,File
+loads,Shared Library File,Harden,Local File Permissions,restricts,File
+loads,Shared Library File,Deceive,Decoy File,spoofs,File
+loads,Shared Library File,Evict,File Removal,deletes,File
+invokes,Create Process,Detect,Process Spawn Analysis,analyzes,Create Process
+invokes,Create Process,Isolate,Hardware-based Process Isolation,restricts,Create Process
+invokes,Create Process,Model,Asset Vulnerability Enumeration,evaluates,Digital Artifact
+invokes,Create Process,Isolate,System Call Filtering,filters,System Call
+invokes,Create Process,Isolate,Mandatory Access Control,restricts,Create Process
+loads,Shared Library File,Detect,File Analysis,analyzes,File

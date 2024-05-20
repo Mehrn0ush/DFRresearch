@@ -1,0 +1,68 @@
+﻿off rel,off artifact,D3FEND Tactic,D3FEND Technique,def rel,def artifact
+produces,Intranet Multicast Network Traffic,Detect,Connection Attempt Analysis,analyzes,Intranet Network Traffic
+produces,Intranet Multicast Network Traffic,Detect,Per Host Download-Upload Ratio Analysis,analyzes,Network Traffic
+produces,Network Traffic,Detect,Protocol Metadata Anomaly Detection,analyzes,Network Traffic
+produces,Intranet Multicast Network Traffic,Detect,Client-server Payload Profiling,analyzes,Network Traffic
+produces,Intranet Multicast Network Traffic,Detect,Remote Terminal Session Detection,analyzes,Network Traffic
+produces,Network Traffic,Detect,Network Traffic Community Deviation,analyzes,Network Traffic
+produces,Intranet Multicast Network Traffic,Detect,User Geolocation Logon Pattern Analysis,analyzes,Network Traffic
+produces,Network Traffic,Isolate,Network Traffic Filtering,filters,Network Traffic
+produces,Intranet Multicast Network Traffic,Model,Asset Vulnerability Enumeration,evaluates,Digital Artifact
+produces,Network Traffic,Detect,Client-server Payload Profiling,analyzes,Network Traffic
+produces,Network Traffic,Detect,Network Traffic Community Deviation,analyzes,Network Traffic
+produces,Network Traffic,Detect,Per Host Download-Upload Ratio Analysis,analyzes,Network Traffic
+produces,Network Traffic,Detect,Protocol Metadata Anomaly Detection,analyzes,Network Traffic
+produces,Network Traffic,Detect,Remote Terminal Session Detection,analyzes,Network Traffic
+produces,Network Traffic,Detect,User Geolocation Logon Pattern Analysis,analyzes,Network Traffic
+produces,Network Traffic,Isolate,Network Traffic Filtering,filters,Network Traffic
+produces,Network Traffic,Model,Asset Vulnerability Enumeration,evaluates,Digital Artifact
+no defensive relations yet,,,,,
+no defensive relations yet,,,,,
+no defensive relations yet,,,,,
+no defensive relations yet,,,,,
+no defensive relations yet,,,,,
+no defensive relations yet,,,,,
+accesses,Credential,Deceive,Decoy User Credential,spoofs,Credential
+accesses,Password File,Deceive,Decoy File,spoofs,File
+produces,Intranet Administrative Network Traffic,Detect,Administrative Network Activity Analysis,analyzes,Intranet Administrative Network Traffic
+produces,Intranet Administrative Network Traffic,Detect,Protocol Metadata Anomaly Detection,analyzes,Network Traffic
+produces,Intranet Administrative Network Traffic,Detect,Connection Attempt Analysis,analyzes,Intranet Network Traffic
+produces,Intranet Administrative Network Traffic,Detect,Per Host Download-Upload Ratio Analysis,analyzes,Network Traffic
+produces,Intranet Administrative Network Traffic,Detect,Client-server Payload Profiling,analyzes,Network Traffic
+produces,Intranet Administrative Network Traffic,Detect,Network Traffic Community Deviation,analyzes,Network Traffic
+produces,Intranet Administrative Network Traffic,Detect,Remote Terminal Session Detection,analyzes,Network Traffic
+accesses,Encrypted Credential,Detect,Credential Compromise Scope Analysis,analyzes,Credential
+produces,Intranet Administrative Network Traffic,Detect,User Geolocation Logon Pattern Analysis,analyzes,Network Traffic
+accesses,Process,Detect,Process Spawn Analysis,analyzes,Process
+may-access,Process,Detect,Process Self-Modification Detection,analyzes,Process
+accesses,Credential,Evict,Credential Revoking,deletes,Credential
+accesses,Encrypted Credential,Evict,Authentication Cache Invalidation,deletes,Credential
+accesses,Authentication Service,Evict,Process Suspension,suspends,Process
+may-access,Process,Evict,Process Termination,terminates,Process
+accesses,Password File,Evict,File Removal,deletes,File
+accesses,Encrypted Credential,Harden,Credential Transmission Scoping,restricts,Credential
+accesses,Credential,Harden,Credential Rotation,regenerates,Credential
+accesses,Password File,Harden,File Encryption,encrypts,File
+accesses,Password File,Harden,Local File Permissions,restricts,File
+accesses,Process,Isolate,Hardware-based Process Isolation,isolates,Process
+produces,Intranet Administrative Network Traffic,Isolate,Network Traffic Filtering,filters,Network Traffic
+accesses,Process,Model,Asset Vulnerability Enumeration,evaluates,Digital Artifact
+may-access,System Password Database,Model,Data Inventory,inventories,Database
+accesses,Operating System File,Detect,File Analysis,analyzes,File
+accesses,Operating System File,Detect,System File Analysis,analyzes,Operating System File
+accesses,Authentication Service,Detect,Process Lineage Analysis,analyzes,Process
+accesses,Authentication Service,Isolate,Mandatory Access Control,isolates,Process
+accesses,Process,Detect,Process Self-Modification Detection,analyzes,Process
+accesses,Process,Detect,Process Spawn Analysis,analyzes,Process
+accesses,Credential,Deceive,Decoy User Credential,spoofs,Credential
+accesses,Process,Evict,Process Termination,terminates,Process
+accesses,Credential,Detect,Credential Compromise Scope Analysis,analyzes,Credential
+accesses,Authentication Service,Evict,Process Suspension,suspends,Process
+accesses,Authentication Service,Isolate,Hardware-based Process Isolation,isolates,Process
+accesses,Process,Model,Asset Vulnerability Enumeration,evaluates,Digital Artifact
+accesses,Credential,Harden,Credential Transmission Scoping,restricts,Credential
+accesses,Credential,Harden,Credential Rotation,regenerates,Credential
+accesses,Process,Detect,Process Lineage Analysis,analyzes,Process
+accesses,Credential,Evict,Authentication Cache Invalidation,deletes,Credential
+accesses,Credential,Evict,Credential Revoking,deletes,Credential
+accesses,Process,Isolate,Mandatory Access Control,isolates,Process
