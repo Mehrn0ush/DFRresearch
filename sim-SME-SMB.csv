@@ -1,0 +1,201 @@
+﻿,attack_results_SME_attack_type,attack_results_SME_maliciousness,attack_results_SME_attack_strength,attack_results_SME_potential_impact,attack_results_SME_cvss_base_score,attack_results_SMB_attack_type,attack_results_SMB_maliciousness,attack_results_SMB_attack_strength,attack_results_SMB_potential_impact,attack_results_SMB_cvss_base_score,total_workload,impact_availability,impact_confidentiality,impact_integrity
+0,DDoS,0.75,1.125,High,7,DDoS,0.75,1.125,High,7,1.125,0.8,0,0
+1,SQL Injection,0.75,1.125,High,9,SQL Injection,0.75,1.125,High,9,2.7,2.58,7.2,7.2
+2,DDoS,0.75,1.125,Medium,0,DDoS,0.75,1.125,Medium,0,1.125,0.96,0,0
+3,SQL Injection,0.75,1.125,High,9,SQL Injection,0.75,1.125,High,9,1.125,1.005,7.2,7.2
+4,DDoS,0.75,1.125,Low,0,DDoS,0.75,1.125,Low,0,1.125,0.96,0,0
+5,SQL Injection,0.75,1.125,Medium,7,SQL Injection,0.75,1.125,Medium,7,2.7,2.58,2.8,2.8
+6,DDoS,0.75,1.125,Low,0,DDoS,0.75,1.125,Low,0,1.125,0.96,0,0
+7,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+8,DDoS,0.75,1.125,Medium,0,DDoS,0.75,1.125,Medium,0,1.125,0.96,0,0
+9,DDoS,0.75,1.125,Medium,0,DDoS,0.75,1.125,Medium,0,2.7,2.472,0,0
+10,DDoS,1.05,1.575,Medium,0,DDoS,1.05,1.575,Medium,0,1.575,1.392,0,0
+11,DDoS,0.75,1.125,High,7,DDoS,0.75,1.125,High,7,1.125,0.8,0,0
+12,DDoS,1.05,1.575,High,7,DDoS,1.05,1.575,High,7,1.575,0.8,0,0
+13,SQL Injection,0.75,1.125,Medium,7,SQL Injection,0.75,1.125,Medium,7,1.125,1.005,2.8,2.8
+14,DDoS,0.75,1.125,Low,0,DDoS,0.75,1.125,Low,0,1.125,0.96,0,0
+15,SQL Injection,0.75,1.125,Low,0,SQL Injection,0.75,1.125,Low,0,1.125,1.005,0,0
+16,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+17,SQL Injection,0.75,1.125,High,9,SQL Injection,0.75,1.125,High,9,1.125,1.005,7.2,7.2
+18,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+19,DDoS,0.75,1.125,Low,0,DDoS,0.75,1.125,Low,0,1.125,0.96,0,0
+20,DDoS,0.75,1.125,Medium,0,DDoS,0.75,1.125,Medium,0,1.125,0.96,0,0
+21,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+22,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+23,DDoS,0.75,1.125,Low,0,DDoS,0.75,1.125,Low,0,1.125,0.96,0,0
+24,DDoS,0.75,1.125,Medium,0,DDoS,0.75,1.125,Medium,0,1.125,0.96,0,0
+25,DDoS,0.75,1.125,Low,0,DDoS,0.75,1.125,Low,0,2.7,2.472,0,0
+26,DDoS,0.75,1.125,Medium,0,DDoS,0.75,1.125,Medium,0,2.925,2.76,7.2,7.2
+27,DDoS,0.75,1.125,Low,0,DDoS,0.75,1.125,Low,0,1.125,0.96,0,0
+28,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+29,DDoS,0.75,1.125,Medium,0,DDoS,0.75,1.125,Medium,0,1.125,0.96,0,0
+30,SQL Injection,0.75,1.125,High,9,SQL Injection,0.75,1.125,High,9,2.7,2.58,7.2,7.2
+31,SQL Injection,0.75,1.125,High,9,SQL Injection,0.75,1.125,High,9,1.125,1.005,7.2,7.2
+32,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+33,DDoS,0.75,1.125,High,7,DDoS,0.75,1.125,High,7,1.125,0.8,0,0
+34,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+35,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+36,DDoS,0.75,1.125,High,7,DDoS,0.75,1.125,High,7,4.5,0.8,0,0
+37,DDoS,0.75,1.125,Medium,0,DDoS,0.75,1.125,Medium,0,1.125,0.96,0,0
+38,SQL Injection,0.75,1.125,High,9,SQL Injection,0.75,1.125,High,9,1.125,1.005,7.2,7.2
+39,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+40,SQL Injection,0.75,1.125,Low,0,SQL Injection,0.75,1.125,Low,0,2.7,2.58,0,0
+41,SQL Injection,0.75,1.125,High,9,SQL Injection,0.75,1.125,High,9,1.125,1.005,7.2,7.2
+42,SQL Injection,0.75,1.125,High,9,SQL Injection,0.75,1.125,High,9,2.925,2.733,7.2,7.2
+43,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+44,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+45,SQL Injection,0.75,1.125,High,9,SQL Injection,0.75,1.125,High,9,1.125,1.005,7.2,7.2
+46,SQL Injection,0.75,1.125,High,9,SQL Injection,0.75,1.125,High,9,2.7,2.58,7.2,7.2
+47,SQL Injection,1.05,1.575,Low,0,SQL Injection,1.05,1.575,Low,0,1.575,1.455,0,0
+48,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+49,DDoS,0.75,1.125,High,7,DDoS,0.75,1.125,High,7,1.125,0.8,0,0
+50,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+51,SQL Injection,0.75,1.125,Low,0,SQL Injection,0.75,1.125,Low,0,1.125,1.005,0,0
+52,DDoS,0.75,1.125,High,7,DDoS,0.75,1.125,High,7,1.125,0.8,0,0
+53,DDoS,0.75,1.125,Medium,0,DDoS,0.75,1.125,Medium,0,1.125,0.96,0,0
+54,SQL Injection,0.75,1.125,Low,0,SQL Injection,0.75,1.125,Low,0,2.7,2.517,0,0
+55,SQL Injection,0.75,1.125,Low,0,SQL Injection,0.75,1.125,Low,0,2.925,2.805,2.8,2.8
+56,DDoS,1.05,1.575,Medium,0,DDoS,1.05,1.575,Medium,0,1.575,1.392,0,0
+57,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+58,SQL Injection,1.05,1.575,Low,0,SQL Injection,1.05,1.575,Low,0,1.575,1.455,0,0
+59,SQL Injection,0.75,1.125,Low,0,SQL Injection,0.75,1.125,Low,0,1.125,1.005,0,0
+60,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+61,SQL Injection,0.75,1.125,High,9,SQL Injection,0.75,1.125,High,9,1.125,1.005,7.2,7.2
+62,SQL Injection,0.75,1.125,Low,0,SQL Injection,0.75,1.125,Low,0,1.125,1.005,0,0
+63,DDoS,0.75,1.125,Medium,0,DDoS,0.75,1.125,Medium,0,1.125,0.96,0,0
+64,DDoS,0.75,1.125,High,7,DDoS,0.75,1.125,High,7,4.5,0.8,0,0
+65,SQL Injection,0.75,1.125,High,9,SQL Injection,0.75,1.125,High,9,2.7,2.517,7.2,7.2
+66,DDoS,0.75,1.125,Low,0,DDoS,0.75,1.125,Low,0,1.125,0.96,0,0
+67,DDoS,0.75,1.125,Low,0,DDoS,0.75,1.125,Low,0,1.125,0.96,0,0
+68,SQL Injection,0.75,1.125,Medium,7,SQL Injection,0.75,1.125,Medium,7,1.125,1.005,2.8,2.8
+69,DDoS,0.75,1.125,High,7,DDoS,0.75,1.125,High,7,1.125,0.8,0,0
+70,SQL Injection,1.05,1.575,Low,0,SQL Injection,1.05,1.575,Low,0,1.575,1.455,0,0
+71,DDoS,0.75,1.125,High,7,DDoS,0.75,1.125,High,7,2.7,0.8,0,0
+72,SQL Injection,1.05,1.575,Low,0,SQL Injection,1.05,1.575,Low,0,1.575,1.455,0,0
+73,DDoS,0.75,1.125,High,7,DDoS,0.75,1.125,High,7,2.7,0.8,0,0
+74,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+75,SQL Injection,0.75,1.125,Medium,7,SQL Injection,0.75,1.125,Medium,7,1.125,1.005,2.8,2.8
+76,SQL Injection,0.75,1.125,High,9,SQL Injection,0.75,1.125,High,9,1.125,1.005,7.2,7.2
+77,DDoS,0.75,1.125,Low,0,DDoS,0.75,1.125,Low,0,1.125,0.96,0,0
+78,DDoS,0.75,1.125,Low,0,DDoS,0.75,1.125,Low,0,1.125,0.96,0,0
+79,SQL Injection,0.75,1.125,Medium,7,SQL Injection,0.75,1.125,Medium,7,1.125,1.005,2.8,2.8
+80,DDoS,0.75,1.125,High,7,DDoS,0.75,1.125,High,7,1.125,0.8,0,0
+81,SQL Injection,0.75,1.125,Medium,7,SQL Injection,0.75,1.125,Medium,7,1.125,1.005,2.8,2.8
+82,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+83,SQL Injection,0.75,1.125,Low,0,SQL Injection,0.75,1.125,Low,0,1.125,1.005,0,0
+84,SQL Injection,0.75,1.125,Low,0,SQL Injection,0.75,1.125,Low,0,1.125,1.005,0,0
+85,DDoS,0.75,1.125,High,7,DDoS,0.75,1.125,High,7,1.125,0.8,0,0
+86,DDoS,0.75,1.125,Low,0,DDoS,0.75,1.125,Low,0,1.125,0.96,0,0
+87,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+88,DDoS,0.75,1.125,Medium,0,DDoS,0.75,1.125,Medium,0,1.125,0.96,0,0
+89,SQL Injection,0.75,1.125,Low,0,SQL Injection,0.75,1.125,Low,0,1.125,1.005,0,0
+90,SQL Injection,1.2,1.8,High,9,SQL Injection,1.2,1.8,High,9,1.8,1.68,7.2,7.2
+91,SQL Injection,0.75,1.125,High,9,SQL Injection,0.75,1.125,High,9,2.7,2.517,7.2,7.2
+92,DDoS,0.75,1.125,Medium,0,DDoS,0.75,1.125,Medium,0,2.7,2.472,0,0
+93,SQL Injection,0.75,1.125,High,9,SQL Injection,0.75,1.125,High,9,1.125,1.005,7.2,7.2
+94,SQL Injection,0.75,1.125,Medium,7,SQL Injection,0.75,1.125,Medium,7,1.125,1.005,2.8,2.8
+95,DDoS,0.75,1.125,Medium,0,DDoS,0.75,1.125,Medium,0,1.125,0.96,0,0
+96,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+97,DDoS,0.75,1.125,High,7,DDoS,0.75,1.125,High,7,1.125,0.8,0,0
+98,DDoS,0.75,1.125,Low,0,DDoS,0.75,1.125,Low,0,1.125,0.96,0,0
+99,SQL Injection,0.75,1.125,Low,0,SQL Injection,0.75,1.125,Low,0,1.125,1.005,0,0
+100,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+101,SQL Injection,1,1.5,Medium,7,SQL Injection,1,1.5,Medium,7,1.5,0.9,0,0
+102,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+103,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+104,DDoS,1,1.5,Low,0,DDoS,1,1.5,Low,0,1.5,0.6,0,0
+105,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+106,DDoS,1.4,2.1,Low,0,DDoS,1.4,2.1,Low,0,7.5,0.2,0,0
+107,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+108,SQL Injection,1,1.5,Low,0,SQL Injection,1,1.5,Low,0,3.6,2.58,0,0
+109,SQL Injection,1,1.5,High,9,SQL Injection,1,1.5,High,9,3.6,3,0,0
+110,DDoS,1,1.5,Medium,0,DDoS,1,1.5,Medium,0,1.5,0.6,0,0
+111,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+112,SQL Injection,1,1.5,Medium,7,SQL Injection,1,1.5,Medium,7,1.5,0.9,0,0
+113,DDoS,1,1.5,Low,0,DDoS,1,1.5,Low,0,1.5,0.6,0,0
+114,DDoS,1,1.5,High,7,DDoS,1,1.5,High,7,1.5,0.8,0,0
+115,DDoS,1,1.5,High,7,DDoS,1,1.5,High,7,1.5,0.8,0,0
+116,DDoS,1,1.5,Medium,0,DDoS,1,1.5,Medium,0,1.5,0.6,0,0
+117,DDoS,2,3,High,7,DDoS,2,3,High,7,3,0.8,0,0
+118,DDoS,1,1.5,Low,0,DDoS,1,1.5,Low,0,3.6,2.7,0,0
+119,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+120,DDoS,1,1.5,High,7,DDoS,1,1.5,High,7,1.5,0.8,0,0
+121,DDoS,1,1.5,High,7,DDoS,1,1.5,High,7,1.5,0.8,0,0
+122,DDoS,1.6,2.4,Medium,0,DDoS,1.6,2.4,Medium,0,2.4,1.32,0,0
+123,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+124,SQL Injection,1,1.5,Medium,7,SQL Injection,1,1.5,Medium,7,4.5,3.3,0,0
+125,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+126,SQL Injection,1.4,2.1,High,9,SQL Injection,1.4,2.1,High,9,5.1,0.8,0,0
+127,DDoS,1,1.5,Medium,0,DDoS,1,1.5,Medium,0,1.5,0.6,0,0
+128,SQL Injection,1,1.5,Low,0,SQL Injection,1,1.5,Low,0,3.6,3,0,0
+129,SQL Injection,2,3,High,9,SQL Injection,2,3,High,9,3,2.4,0,0
+130,SQL Injection,1,1.5,Medium,7,SQL Injection,1,1.5,Medium,7,1.5,0.9,0,0
+131,DDoS,1,1.5,Low,0,DDoS,1,1.5,Low,0,1.5,0.6,0,0
+132,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+133,DDoS,1,1.5,High,7,DDoS,1,1.5,High,7,1.5,0.8,0,0
+134,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+135,DDoS,2,3,Medium,0,DDoS,2,3,Medium,0,3,1.8,0,0
+136,DDoS,1,1.5,High,7,DDoS,1,1.5,High,7,3.6,0.8,0,0
+137,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+138,DDoS,1,1.5,Medium,0,DDoS,1,1.5,Medium,0,1.5,0.6,0,0
+139,SQL Injection,1,1.5,Low,0,SQL Injection,1,1.5,Low,0,3.6,2.58,0,0
+140,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+141,SQL Injection,1.4,2.1,High,9,SQL Injection,1.4,2.1,High,9,2.1,1.5,0,0
+142,DDoS,1,1.5,High,7,DDoS,1,1.5,High,7,1.5,0.8,0,0
+143,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+144,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+145,SQL Injection,1,1.5,Medium,7,SQL Injection,1,1.5,Medium,7,1.5,0.9,0,0
+146,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+147,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+148,SQL Injection,2,3,Low,0,SQL Injection,2,3,Low,0,3,2.4,0,0
+149,DDoS,1.6,2.4,Medium,0,DDoS,1.6,2.4,Medium,0,2.4,1.32,0,0
+150,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+151,SQL Injection,2,3,High,9,SQL Injection,2,3,High,9,3,2.4,0,0
+152,DDoS,1,1.5,Medium,0,DDoS,1,1.5,Medium,0,3.6,2.28,0,0
+153,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+154,SQL Injection,1,1.5,Medium,7,SQL Injection,1,1.5,Medium,7,1.5,0.9,0,0
+155,SQL Injection,1,1.5,Medium,7,SQL Injection,1,1.5,Medium,7,1.5,0.9,0,0
+156,SQL Injection,1,1.5,High,9,SQL Injection,1,1.5,High,9,4.5,3.9,0,0
+157,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+158,DDoS,1,1.5,Medium,0,DDoS,1,1.5,Medium,0,4.5,3,0,0
+159,SQL Injection,1,1.5,Low,0,SQL Injection,1,1.5,Low,0,1.5,0.9,0,0
+160,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+161,DDoS,1.4,2.1,High,7,DDoS,1.4,2.1,High,7,5.1,0.2,0,0
+162,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+163,SQL Injection,1,1.5,Low,0,SQL Injection,1,1.5,Low,0,1.5,0.9,0,0
+164,DDoS,1,1.5,High,7,DDoS,1,1.5,High,7,3.9,0.32,0,0
+165,SQL Injection,1,1.5,Medium,7,SQL Injection,1,1.5,Medium,7,1.5,0.9,0,0
+166,SQL Injection,1,1.5,High,9,SQL Injection,1,1.5,High,9,1.5,0.9,0,0
+167,DDoS,1,1.5,Low,0,DDoS,1,1.5,Low,0,1.5,0.6,0,0
+168,SQL Injection,1.4,2.1,Low,0,SQL Injection,1.4,2.1,Low,0,4.5,3.9,0,0
+169,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+170,SQL Injection,1,1.5,High,9,SQL Injection,1,1.5,High,9,1.5,0.9,0,0
+171,DDoS,1,1.5,Low,0,DDoS,1,1.5,Low,0,1.5,0.6,0,0
+172,SQL Injection,1,1.5,Medium,7,SQL Injection,1,1.5,Medium,7,3.6,2.58,0,0
+173,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+174,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+175,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+176,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+177,DDoS,1.6,2.4,Low,0,DDoS,1.6,2.4,Low,0,2.4,1.32,0,0
+178,SQL Injection,2,3,Medium,7,SQL Injection,2,3,Medium,7,3,2.4,0,0
+179,SQL Injection,1.6,2.4,Medium,7,SQL Injection,1.6,2.4,Medium,7,5.4,4.8,0,0
+180,DDoS,2,3,Medium,0,DDoS,2,3,Medium,0,3,1.8,0,0
+181,SQL Injection,1,1.5,Low,0,SQL Injection,1,1.5,Low,0,1.5,0.9,0,0
+182,SQL Injection,2,3,Low,0,SQL Injection,2,3,Low,0,3,2.4,0,0
+183,SQL Injection,1,1.5,High,9,SQL Injection,1,1.5,High,9,3.6,0.8,0,0
+184,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+185,DDoS,2,3,Medium,0,DDoS,2,3,Medium,0,3,1.8,0,0
+186,DDoS,2,3,Medium,0,DDoS,2,3,Medium,0,3,1.8,0,0
+187,SQL Injection,1.4,2.1,Low,0,SQL Injection,1.4,2.1,Low,0,2.1,1.5,0,0
+188,DDoS,2,3,High,7,DDoS,2,3,High,7,3,0.8,0,0
+189,DDoS,1,1.5,Medium,0,DDoS,1,1.5,Medium,0,1.5,0.6,0,0
+190,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+191,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+192,DDoS,2,3,High,7,DDoS,2,3,High,7,3,0.8,0,0
+193,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+194,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+195,DDoS,2,3,High,7,DDoS,2,3,High,7,3,0.8,0,0
+196,DDoS,1,1.5,Medium,0,DDoS,1,1.5,Medium,0,4.5,3.6,0,0
+197,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+198,SQL Injection,1,1.5,Low,0,SQL Injection,1,1.5,Low,0,1.5,0.9,0,0
+199,0,0,0,0,0,0,0,0,0,0,0,0,0,0
